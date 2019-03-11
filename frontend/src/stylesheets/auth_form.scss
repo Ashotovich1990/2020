@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.signup-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 50px;
+  height: 600px;
+  font-family: $Crimson;
+}
+
+.signup-form-heading {
+  font-family: $Oswald;
+  font-size: 40px;
+}
+
+.signup-form {
+  font-size: 20px;
+}
+
+.signup-form > input {
+  margin: 10px 0px;
+  // border
+}
+    
+.signup-form > input::placeholder {
+  color: rgb(180, 180, 180);
+}
+
+.signup-form > input[type="submit"] {
+  font-family: $Oswald;
+}

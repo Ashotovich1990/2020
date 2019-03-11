@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import '../../stylesheets/auth_form.scss';
 
 class SignupForm extends React.Component {
   constructor(props) {
@@ -54,23 +55,24 @@ class SignupForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-container">
+      <div className="signup-form-container">
+      <h2 className="signup-form-heading">Sign up to 2020</h2>
         <form onSubmit={this.handleSubmit}>
-          <div className="login-form">
+          <div className="signup-form">
             <br />
-            <input type="text"
+            > <input type="text"
               value={this.state.username}
               onChange={this.update('username')}
               placeholder="Username"
             />
             <br />
-            <input type="password"
+            > <input type="password"
               value={this.state.password}
               onChange={this.update('password')}
               placeholder="Password"
             />
             <br />
-            <input type="password"
+            > <input type="password"
               value={this.state.password2}
               onChange={this.update('password2')}
               placeholder="Confirm Password"
