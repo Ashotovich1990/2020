@@ -5,7 +5,7 @@ const data = {
     labels: ["Positive", "Neutral", "Negative"],
     datasets: [{
         label: "Public opinion on Hillary Clinton",
-        backgroundColor: ['#D2222D', '#FFBF00', '#238823'],
+        backgroundColor: ['#FF6F69', '#FFCC5C', '#88D8B0'],
         data: [2, 10, 5],
     }]
 }
