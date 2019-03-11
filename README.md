@@ -4,7 +4,7 @@
 
 ### Background and Overview
 
-Keeping track of public issues can be difficult  -- part of the problem is too much information. 2020 will simplify that by giving users a quick snap shot of peoples' current attitudes towards a candidate and the discussions about his/her stance on certain issues (i.e., social issues, governance, etc). The goal is for the average user to quickly see why postive/negative conversations are being associated with a candidate and to begin conversations of their own.
+Keeping track of public issues, figures, and elections can be difficult  -- part of the problem is too much information. 2020 will simplify that by giving users a quick snap shot of peoples' current attitudes towards a candidate and the discussions about his/her stance on certain issues (i.e., social issues, governance, etc). The goal is for the average user to quickly see why postive/negative conversations are being associated with a candidate and to begin conversations of their own.
 
 ### Functionality and MVPs
 * User authorization: signup and login
