@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pie } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 
 const data = {
     labels: ["Positive", "Neutral", "Negative"],
@@ -14,7 +14,8 @@ const options = {
     
     title: {
         display: true,
-        text: 'Public Opinion on Hillary Clinton'
+        text: 'Public Opinion on Hillary Clinton',
+        fontSize: 24
     }
 }
 
@@ -23,7 +24,7 @@ class ChartContainer extends React.Component {
     render() {
         return(
             <div className="graph-container">
-            < Pie data={data} options={options} />
+                < Doughnut data={data} options={options} />
             </div>
         ) 
 
