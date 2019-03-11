@@ -47,9 +47,9 @@ Public figures and policy are hardly the most talked about issues in everyday co
 * Finalize an agreed upon database structure, columns, potential joins tables - All
 * Finalize React session and splash pages - Viviene
 * Plan for remaining React components and begin brainstorming ways in which to implement graphs; begin styling - Corrie/Viviene
-* Finalize Twitter API calls from backend - David and Aram
+* Finalize Twitter API calls from backend - Aram
 * Investigate preCeive API methods and see how to incorporate into application - David
 
 **March 12**
-* Finalize preCeive API calls from backend; ensure API calls are compatable, able to send to frontend - David and Aram
+* Finalize preCeive API calls from backend; ensure API response results are compatible (able to send to frontend) - David and Aram
 * Finalize remaining React components, graphs, styling - Corrie/Viviene
