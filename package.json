@@ -10,7 +10,7 @@
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },
-  "author": "David, Corrie, Vivien, Aram",
+  "author": "David, Corrie, Viviene, Aram",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
