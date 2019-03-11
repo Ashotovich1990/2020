@@ -5,6 +5,7 @@ const db = require('./config/keys').mongoURI;
 const users = require("./routes/api/users.js");
 const tweets = require("./routes/api/tweets.js");
 const bodyParser = require('body-parser');
+// const twitterRouter = require('./routes/api/tweets.js')
 const passport = require('passport');
 const User = require('./models/User');
 
