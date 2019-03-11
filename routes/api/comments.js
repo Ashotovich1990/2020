@@ -43,7 +43,7 @@ router.post('/',
         text: req.body.text,
         user: req.user.id
       });
-  
+      debugger
       newComment.save().then(comment => res.json(comment));
     }
   );
