@@ -4,6 +4,7 @@ const app = express();
 const db = require('./config/keys').mongoURI;
 const users = require("./routes/api/users.js");
 const tweets = require("./routes/api/tweets.js");
+const comments = require("./routes/api/comments.js");
 const bodyParser = require('body-parser');
 // const twitterRouter = require('./routes/api/tweets.js')
 const passport = require('passport');
@@ -20,6 +21,7 @@ require('./config/passport')(passport);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use("/api/users", users);
+app.use("/api/comments", comments);
 app.use("/api/tweets", tweets);
 
 const port = process.env.PORT || 5000;
