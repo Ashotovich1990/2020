@@ -41,7 +41,7 @@ class LoginForm extends React.Component {
 
   renderErrors() {
     return (
-      <ul>
+      <ul className="login-form-errors">
         {Object.keys(this.state.errors).map((error, i) => (
           <li key={`error-${i}`}>
             {this.state.errors[error]}
@@ -53,22 +53,28 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="login-form-container">
+        {/* image from Lukas Blazek on unsplash.com */}
+        <img className="splash-image"
+          src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80"
+          alt="laptop with visualized data" />
         <form onSubmit={this.handleSubmit}>
-          <div>
-            <input type="text"
+          <div className="login-form">
+            <h2 className="login-form-heading">Log in to 2020</h2>
+            <br />
+            <label className="login-form-field">> <input type="text"
               value={this.state.username}
               onChange={this.update('username')}
-              placeholder="Username"
-            />
+              placeholder="Username" />
+            </label>
             <br />
-            <input type="password"
+            <label className="login-form-field">> <input type="password"
               value={this.state.password}
               onChange={this.update('password')}
-              placeholder="Password"
-            />
+              placeholder="Password" />
+            </label>
             <br />
-            <input type="submit" value="Submit" />
+            <input className="login-form-submit" type="submit" value="Submit" />
             {this.renderErrors()}
           </div>
         </form>
