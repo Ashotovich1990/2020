@@ -36,20 +36,19 @@ class CommentCompose extends React.Component {
 
   render() {
     return(
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <div>
+      
+        <form onSubmit={this.handleSubmit} className="comment-form-container">
+          <div className="comment-form">
             <input type="textarea"
               value ={this.state.text}
               onChange={this.update()}
               placeholder="Write your comment.."
               />
-              <input type="submit" value="Submit" />
+              <input className="comment-submit" type="submit" value="Submit" />
             </div>
           </form>
-          <br />
-          <CommentBox text={this.state.newComment} />
-        </div>
+          
+        
     )
   }
 }
