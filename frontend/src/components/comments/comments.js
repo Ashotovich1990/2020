@@ -26,7 +26,7 @@ class Comments extends React.Component {
       return (
         <aside className="comments-container">
           <div className='comment-sidebar-sticky'>
-            There are no Comments
+            <h2>Join the Conversation</h2>
           </div>
         </aside>
       )
@@ -34,7 +34,7 @@ class Comments extends React.Component {
       return (
         <aside className="comments-container">
           <div className='comment-sidebar-sticky'>
-            <h2>All Comments</h2>
+            <h2>Join the Conversation</h2>
               {this.state.comments.map(comment => (
                 <CommentBox key={comment._id} text = {comment.text} />
               ))}
