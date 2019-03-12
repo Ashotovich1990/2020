@@ -1,20 +1,23 @@
 import React from 'react';
 import {withRouter} from 'react-router-dom';
-import ChartComponent from '../../charts/charts';
+import ChartContainer from '../../charts/chart';
 
 class Results extends React.Component {
   constructor(props) {
     super(props);
   }
 
-  componentWillMount() {
-    this.props.fetchComments();
-  }
+  // componentWillMount() {
+  //   this.props.fetchComments();
+  // }
 
   render() {
-   <div>
-     <ChartContainer /> 
-    </div> 
+    return(
+      <div>
+        
+      <ChartContainer sentiments={this.props.sentiments}/> 
+      </div> 
+    )
   }
 }
 
