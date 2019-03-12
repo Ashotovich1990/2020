@@ -3,11 +3,9 @@ const router = express.Router();
 const headers = require('../../config/keys_twitter.js');
 const OAuth = require('OAuth');
 
-const config = {headers: headers}
-
 router.get("/all", (req, res) => {
     const hashTag = req.query.tag;
-    const URL = `https://api.twitter.com/1.1/search/tweets.json?lang=en&count=100&result_type=recent&exclude_replies=true&q=${hashTag}` 
+    const URL = `https://api.twitter.com/1.1/search/tweets.json?lang=en&count=100&result_type=recent&exclude_replies=true&q=${hashTag}%20-filter%3Aretweets` 
 
     const oauth = new OAuth.OAuth(
         'https://api.twitter.com/oauth/request_token',
@@ -27,8 +25,7 @@ router.get("/all", (req, res) => {
 
         function (e, data, response) {
         if (e) console.error(e);        
-        tweets = JSON.parse(data)
-        .statuses.map(status => status.text)
+        tweets = JSON.parse(data).statuses.map(status => status.text)
         return res.json(tweets);     
         }
         )
