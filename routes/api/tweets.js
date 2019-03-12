@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const headers = require('../../config/keys_twitter.js');
-const OAuth = require('OAuth');
+const OAuth = require('oauth');
+const request = require('request');
 
-const config = {headers: headers}
+const config = {headers: headers};
+
+// const sentiment = require("../../config/keys_sentiment.js");
 
 router.get("/all", (req, res) => {
     const hashTag = req.query.tag;
@@ -19,6 +22,7 @@ router.get("/all", (req, res) => {
         'HMAC-SHA1'
     )
     let tweets;
+    let auth;
 
     oauth.get(
         URL,
@@ -28,7 +32,29 @@ router.get("/all", (req, res) => {
         function (e, data, response) {
         if (e) console.error(e);        
         tweets = JSON.parse(data)
-        .statuses.map(status => status.text)
+        .statuses.map(status => status.text);
+
+        auth = "as7FTR2m6ycuNE38XWXwo4FyAsYW3jnWwZmvUGoR1ps";
+
+        request({
+            uri: 'https://apis.paralleldots.com/v3/sentiment',
+            method: "post",
+            multipart: [
+                
+                {"text": tweets},
+                {"api_key": auth}
+                
+            ],
+            
+        },
+        function(error, response, body) {
+            if (error) {
+                return console.error('upload failed:', error);
+            }
+            console.log('upload successful', body);
+        }
+        );
+
         return res.json(tweets);     
         }
         )
