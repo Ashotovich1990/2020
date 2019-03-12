@@ -1,5 +1,6 @@
 import React from 'react';
+import '../../stylesheets/browse.scss'
 
 export const Loader = () => {
-    return <div><h1>I am the Loader</h1></div>;
+    return <div className="search-spinner"></div>;
 }
