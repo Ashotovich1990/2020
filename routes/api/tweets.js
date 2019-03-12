@@ -56,15 +56,16 @@ router.get("/all", (req, res) => {
                 }
                 
             },
-        function optionalCallback(error, httpResponse,body) {
+        function optionalCallback(error, httpResponse, body) {
         if (error) {
             return console.error('upload failed:', error);
 
-        tweets = JSON.parse(data).statuses.map(status => status.text)
-        return res.json(tweets);     
+        // tweets = JSON.parse(data).statuses.map(status => status.text)
+        // return res.json(tweets);     
 
         }
-        return res.json(body);   
+        const result = JSON.parse(body)
+        return res.json({sentiment: result, tweets});   
 
         });
     });
