@@ -6,13 +6,16 @@ const request = require('request');
 const axios = require('axios');
 
 
+
 const config = {headers: headers};
 
 // const sentiment = require("../../config/keys_sentiment.js");
 
+
+
 router.get("/all", (req, res) => {
     const hashTag = req.query.tag;
-    const URL = `https://api.twitter.com/1.1/search/tweets.json?lang=en&count=100&result_type=recent&exclude_replies=true&q=${hashTag}` 
+    const URL = `https://api.twitter.com/1.1/search/tweets.json?lang=en&count=100&result_type=recent&exclude_replies=true&q=${hashTag}%20-filter%3Aretweets` 
 
     const oauth = new OAuth.OAuth(
         'https://api.twitter.com/oauth/request_token',
@@ -34,6 +37,7 @@ router.get("/all", (req, res) => {
 
         function (e, data, response) {
         if (e) console.error(e);        
+
         tweets = JSON.parse(data)
         .statuses.map(status => status.text);
 
@@ -55,6 +59,10 @@ router.get("/all", (req, res) => {
         function optionalCallback(error, httpResponse,body) {
         if (error) {
             return console.error('upload failed:', error);
+
+        tweets = JSON.parse(data).statuses.map(status => status.text)
+        return res.json(tweets);     
+
         }
         return res.json(body);   
 

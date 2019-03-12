@@ -1,0 +1,63 @@
+@import './variables.scss';
+
+.signup-form-container, .login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 80px;
+  height: 80%;
+  font-family: $Crimson;
+}
+
+.signup-form-heading, .login-form-heading {
+  font-family: $Oswald;
+  font-size: 40px;
+}
+
+.signup-form, .login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px;
+  height: 360px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 1px 10px -2px rgb(120, 120, 120);
+  font-size: 20px;
+}
+
+.login-form {
+  height: 290px;
+}
+
+.signup-form-field > input, .login-form-field > input {
+  width: 220px;
+}
+    
+.signup-form-field > input::placeholder, .login-form-field > input::placeholder {
+  color: rgb(180, 180, 180);
+}
+
+.signup-form-submit, .login-form-submit {
+  font-family: $Oswald;
+  font-weight: 400;
+  background-color: rgb(235, 233, 241);
+  border: 1px solid rgb(193, 190, 209);
+  border-radius: 10px;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+}
+
+.signup-form-submit:hover, .login-form-submit:hover {
+  background-color: rgb(242, 241, 247);
+  border: 1px solid rgb(193, 190, 209);
+}
+
+.signup-form-errors, .login-form-errors {
+  margin-top: 10px;
+  font-family: $Oswald;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(180, 21, 21)
+}
