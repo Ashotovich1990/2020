@@ -12,5 +12,9 @@
 .comment-sidebar-sticky{
   
   background-color: #fff;
-
+  position: sticky;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  
 }
