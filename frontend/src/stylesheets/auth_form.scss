@@ -41,8 +41,8 @@
 .signup-form-submit, .login-form-submit {
   font-family: $Oswald;
   font-weight: 400;
-  background-color: rgb(235, 233, 241);
-  border: 1px solid rgb(193, 190, 209);
+  background-color: rgb(241, 238, 232);
+  border: 1px solid rgb(190, 185, 175);
   border-radius: 10px;
   height: 40px;
   width: 80px;
@@ -50,8 +50,8 @@
 }
 
 .signup-form-submit:hover, .login-form-submit:hover {
-  background-color: rgb(242, 241, 247);
-  border: 1px solid rgb(193, 190, 209);
+  background-color: rgb(247, 245, 242);
+  border: 1px solid rgb(196, 192, 184);
 }
 
 .signup-form-errors, .login-form-errors {
