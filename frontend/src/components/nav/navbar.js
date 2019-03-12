@@ -16,12 +16,11 @@ class NavBar extends React.Component {
 
   /* What links should we have? */
   getLinks() {
+    console.log(this.props);
     if (this.props.loggedIn) {
       return (
         <div className="navbar-links">
-          {/* <Link to={'/tweets'}>All Tweets</Link>
-          <Link to={'/profile'}>Profile</Link>
-          <Link to={'/new_tweet'}>Write a Tweet</Link> */}
+          <h6>Hi {this.props.user.username}</h6>
           <button onClick={this.logoutUser}>Logout</button>
         </div>
       );
