@@ -5,7 +5,7 @@ import Browse from './browse';
 
 const mapStateToProps = state => ({
     searchTerm: state.search,
-    sentiment: state.entities.sentiments.sentiment
+    sentiment: state.entities.sentiments
 })
 
 const mapDispatchToProps = dispatch => ({

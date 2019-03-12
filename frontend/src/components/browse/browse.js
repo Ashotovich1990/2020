@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchContainer from '../search/search_container';
 import {Loader} from './loader';
+import ResultsContainer from '../results/results_container';
 
 class Browse extends React.Component {
     constructor(props) {
@@ -10,10 +11,10 @@ class Browse extends React.Component {
     render() {
         if (!this.props.searchTerm) {
             return <SearchContainer />;
-        } else if (this.props.searchTerm && !this.props.sentiment) {
+        } else if (this.props.searchTerm && this.props.sentiment.length===0) {
             return <Loader />;
-        } else {
-            return <div>hello world</div>;
+        } else if (this.props.searchTerm && this.props.sentiment.length !==0 ) {
+            return <ResultsContainer />;
         }
     }
 }
