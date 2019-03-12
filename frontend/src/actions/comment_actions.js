@@ -21,18 +21,18 @@ export const receiveNewComment = comment => ({
 
 export const fetchComments = () => dispatch => (
   getComments()
-    .then(comments => dispatch(receiveComments()))
-    .catch(err => console(err))
+    .then(comments => dispatch(receiveComments(comments)))
+    .catch(err => console.log(err))
 );
 
 export const fetchUserComments = (id) => dispatch => (
   getUserComments(id)
     .then(comments => dispatch(receiveUserComments(comments)))
-    .catch(err => console(err))
+    .catch(err => console.log(err))
 );
 
 export const composeComment = (data) => dispatch => (
-  getComments(data)
-    .then(comment => dispatch(receiveComments(comment)))
-    .catch(err => console(err))
+  writeComment(data)
+    .then(comment => dispatch(receiveNewComment(comment)))
+    .catch(err => console.log(err))
 );
