@@ -3,14 +3,16 @@ import { fetchComments } from '../../actions/comment_actions';
 import Results from './results';
 
 const mapStateToProps = state => {
+  
   return {
-    comments: Object.values(state.comments.all)
+    comments: Object.values(state.comments.all),
+    sentiments: state.entities.sentiments
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchComments: () => dispatch(fetchComments()))
+    fetchComments: () => dispatch(fetchComments())
   };
 };
 
