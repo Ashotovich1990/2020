@@ -30,12 +30,20 @@
   justify-content: space-between;
 }
 
-.navbar-links > a {
+.navbar-links > a, .navbar-links > h6, .navbar-links > button {
   margin-left: 20px;
   font-family: $Crimson;
   font-size: 18px;
 }
 
-.navbar-links > a:hover {
+.navbar-links > h6 {
+  font-size: 22px;
+}
+
+.navbar-links > button:hover {
+  cursor: pointer;
+}
+
+.navbar-links > a:hover, .navbar-links > button:hover {
   color: rgb(67, 61, 75);
 }

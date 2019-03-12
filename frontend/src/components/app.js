@@ -9,6 +9,7 @@ import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import CommentsContainer from './comments/comments_container';
 import CommentComposeContainer from './comments/comment_compose_container';
+import SearchContainer from './search/search_container';
 
 const App = () => (
   <div className="app">
@@ -18,6 +19,7 @@ const App = () => (
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
       <AuthRoute exact path="/charts" component={ChartContainer} />
+      <ProtectedRoute exact path="/browse" component={SearchContainer} />
       <ProtectedRoute exact path='/comments' component={CommentsContainer} />
       <ProtectedRoute exact path='/new_comment' component={CommentComposeContainer} />
     </Switch>
