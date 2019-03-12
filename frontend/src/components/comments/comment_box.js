@@ -6,7 +6,6 @@ class CommentBox extends React.Component {
       <div>
         <h3>{this.props.text}</h3>
         <h3>{this.props.user}</h3>
-        <h3>{Date.now}</h3>
       </div>
     );
   }
