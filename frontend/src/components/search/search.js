@@ -13,7 +13,7 @@ class Search extends React.Component {
     }
 
     handleClick() {
-        this.props.receivesearch(this.state.searchTerm);
+        this.props.receiveSearch(this.state.searchTerm);
         this.props.fetchTweets(this.state.searchTerm);
     }
 
