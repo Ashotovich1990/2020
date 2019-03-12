@@ -16,7 +16,7 @@ article, aside, figure, figcaption, footer, time, small {
   background: transparent;
 }
 
-html, body {
+html, body, #root {
   height: 100%;
 }
 

@@ -31,25 +31,11 @@
 }
 
 .navbar-links > a {
-  margin-left: 10px;
+  margin-left: 20px;
+  font-family: $Crimson;
+  font-size: 18px;
 }
 
-
-.app {
-  // height: 100%;
-}
-
-.app > img {
-  position: absolute;
-  z-index: -10;
-}
-
-.main-page {
-  display: flex;
-  justify-content: center;
-}
-
-.main-page-hook {
-  // display: flex;
-  // align-self: center;
+.navbar-links > a:hover {
+  color: rgb(67, 61, 75);
 }
