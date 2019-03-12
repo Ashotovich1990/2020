@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../stylesheets/search.scss';
 
 class Search extends React.Component {
   constructor(props) {
@@ -12,16 +13,16 @@ class Search extends React.Component {
     this.setState( {searchTerm: e.target.value })
   }
 
-  handleClick() {
-    this.props.receivesearch(this.state.searchTerm);
-    this.props.fetchTweets(this.state.searchTerm);
-  }
+    handleClick() {
+        this.props.receiveSearch(this.state.searchTerm);
+        this.props.fetchTweets(this.state.searchTerm);
+    }
 
   render() {
     return (
       <div className="search-page">
         <div className="search-bar">
-          <input className="search-text" type="text" onChange={this.handleChange}/>
+          <input className="search-box" type="text" onChange={this.handleChange}/>
           <input className="search-button" type="submit" onClick={this.handleClick} value="Search"/>
         </div>
       </div>

@@ -1,0 +1,66 @@
+@import './variables.scss';
+
+
+.comment-submit{
+  background-color: #26798C;
+  color: white;
+  padding: 0.4rem;
+}
+
+.comment-form-container{
+  width: 300px;
+}
+.comment-form{
+  width: 300px;
+  display:flex;
+  justify-content: space-between;
+}
+.comments-container{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  line-height: 1.5;
+  
+}
+.comment-sidebar-sticky{
+  
+  background-color: #fff;
+  
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+}
+#comment-sidebar-title{
+  color: #26798C;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding-top: 1.8rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.comment-sidebar-body{
+  overflow: auto;
+  display: block;
+  color: black;
+  line-height: 1.5;
+  
+}
+.comment-sidebar-list-item{
+  list-style: none;
+  font-weight: 400;
+  font-style: normal;
+  width: 300px;
+}
+.list-item-container{
+  margin: 0;
+  background-color: #DCDCDC;
+  border: 1px solid white;
+  border-radius: 4px;
+  text-align: center;
+  max-width: 300px;
+}
