@@ -1,0 +1,73 @@
+@import './variables.scss';
+
+.app {
+  height: 100%;
+}
+
+.splash-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0.9;
+}
+
+.main-page {
+  height: 100%;
+}
+
+.main-page-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 93%;
+}
+
+.main-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 750px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.main-page-content > h1 {
+  margin: 10px;
+  font-family: $Crimson;
+  font-size: 50px;
+}
+
+.main-page-button {
+  margin: 30px;
+  font-family: $Oswald;
+  font-weight: 300;
+  font-size: 30px;
+  background-color: rgb(175, 162, 249);
+  border: 1px solid rgb(143, 131, 211);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 50px;
+  width: 170px;
+  text-align: center;
+}
+
+.main-page-button:hover {
+  background-color: rgb(183, 171, 248);
+  border: 1px solid rgb(152, 141, 216);
+}
+
+.main-page-footer {
+  display: flex;
+  align-items: center;
+  height: 7%;
+  background-color: white;
+}
+
+.main-page-footer > p {
+  margin: auto 20px;
+  font-family: $Crimson;
+  font-size: 14px;
+}
