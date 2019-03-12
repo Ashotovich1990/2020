@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+.comments-container{
+  margin-left: 7%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: gray;
+  color: red;
+}
+.comment-sidebar-sticky{
+  
+  background-color: #fff;
+
+}
