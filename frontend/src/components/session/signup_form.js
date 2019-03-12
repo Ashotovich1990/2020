@@ -43,7 +43,7 @@ class SignupForm extends React.Component {
 
   renderErrors() {
     return (
-      <ul>
+      <ul className="signup-form-errors">
         {Object.keys(this.state.errors).map((error, i) => (
           <li key={`error-${i}`}>
             {this.state.errors[error]}
@@ -56,29 +56,33 @@ class SignupForm extends React.Component {
   render() {
     return (
       <div className="signup-form-container">
+        {/* image from Lukas Blazek on unsplash.com */}
+        <img className="splash-image"
+          src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80"
+          alt="laptop with visualized data" />
         <form onSubmit={this.handleSubmit}>
           <div className="signup-form">
             <h2 className="signup-form-heading">Sign up to 2020</h2>
             <br />
-            <label>> <input type="text"
+            <label className="signup-form-field">> <input type="text"
               value={this.state.username}
               onChange={this.update('username')}
               placeholder="Username" />
             </label>
             <br />
-            <label>> <input type="password"
+            <label className="signup-form-field">> <input type="password"
               value={this.state.password}
               onChange={this.update('password')}
               placeholder="Password" />
             </label>
             <br />
-            <label>> <input type="password"
+            <label className="signup-form-field">> <input type="password"
               value={this.state.password2}
               onChange={this.update('password2')}
               placeholder="Confirm Password" />
             </label>
             <br />
-            <input type="submit" value="Submit" />
+            <input className="signup-form-submit" type="submit" value="Submit" />
             {this.renderErrors()}
           </div>
         </form>
