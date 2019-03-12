@@ -3,9 +3,8 @@ import React from 'react';
 class CommentBox extends React.Component {
   render() {
     return (
-      <div>
-        <h3>{this.props.text}</h3>
-        <h3>{this.props.user}</h3>
+      <div className="list-item-container">
+        <h3 className="comment-box">{this.props.text}</h3>
       </div>
     );
   }
