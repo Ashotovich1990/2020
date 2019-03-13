@@ -15,8 +15,7 @@ class Results extends React.Component {
   render() {
     return(
       <div className="results-page">
-        
-      <ChartContainer sentiments={this.props.sentiments}/> 
+      <ChartContainer sentiments={this.props.sentiments }  search={this.props.search} tweets={this.props.tweets}/> 
       <Tweets tweets={this.props.tweets} />
       </div> 
     )
