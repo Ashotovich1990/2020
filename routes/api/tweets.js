@@ -28,7 +28,8 @@ router.get("/all", (req, res) => {
     )
     let tweets;
     let auth;
-    let url;
+    let result;
+    let emotions;
 
     oauth.get(
         URL,
@@ -52,21 +53,35 @@ router.get("/all", (req, res) => {
                 "Content-type": "application/json",
                 "text": tweets,
                 "api_key": auth
-                
-                }
-                
+                }  
             },
         function optionalCallback(error, httpResponse, body) {
         if (error) {
             return console.error('upload failed:', error);
-
-        // tweets = JSON.parse(data).statuses.map(status => status.text)
-        // return res.json(tweets);     
-
         }
-        const result = JSON.parse(body)
-        return res.json({sentiment: result, tweets});   
+        result = JSON.parse(body);
+        // return res.json({sentiment: result, tweets});   
+        }),
 
+        request.post({
+            url: 'https://apis.paralleldots.com/v3/emotion',
+            formData:
+            {
+                "Content-type": "application/json",
+                "text": tweets,
+                "api_key": auth
+                }  
+            },
+        function optionalCallback(error, httpResponse, body2) {
+        if (error) {
+            return console.error('upload failed:', error);
+        }
+        emotions = JSON.parse(body2);
+
+
+        return res.json({sentiment: result, tweets, emotions: emotions});   
+
+            
         });
     });
 });
@@ -74,60 +89,4 @@ router.get("/all", (req, res) => {
 
 
 
-module.exports = router
-
-
-
-        // axios({
-        //     method: 'post',
-        //     url: url,
-        //     data: data
-        // }).then(data=> console.log(data))
-        //     .catch(err=>console.log(err))
-        
-        // return res.json(sentiment);     
-        // });
-// request.post({
-//     url: 'https://apis.paralleldots.com/v3/sentiment',
-//     formData:
-//     {
-        
-//         "TEXT": tweets,
-//         "API KEY": auth
-        
-//         }
-        
-//     },
-//     function optionalCallback(error, httpResponse,body) {
-//         if (error) {
-//             return console.error('upload failed:', error);
-//         }
-//         console.log('upload successful', body);
-
-//         });
-
-// let sentiment = () => request({
-//     uri: 'https://apis.paralleldots.com/v3/sentiment',
-//     method: "post",
-//     multipart: {
-//         chunked: false,
-//         data: [
-//             {
-//                 'content-type': 'application/json',
-//                 body: tweets,
-//             },
-//             {
-//                 'content-type': 'application/json',
-//                 body: auth,
-//             }
-//         ]
-//     }
-    
-// },
-// function(error, response, body) {
-//     if (error) {
-//         return console.error('upload failed:', error);
-//     }
-//     console.log('upload successful', body);
-// }
-// );
+module.exports = router;
