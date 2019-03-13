@@ -1,6 +1,7 @@
 import React from 'react';
 import {withRouter} from 'react-router-dom';
 import ChartContainer from '../../charts/chart';
+import Tweets from '../tweets/tweets';
 
 class Results extends React.Component {
   constructor(props) {
@@ -13,9 +14,10 @@ class Results extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="results-page">
         
       <ChartContainer sentiments={this.props.sentiments}/> 
+      <Tweets tweets={this.props.tweets} />
       </div> 
     )
   }

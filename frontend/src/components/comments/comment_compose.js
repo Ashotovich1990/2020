@@ -42,7 +42,7 @@ class CommentCompose extends React.Component {
             <input type="textarea"
               value ={this.state.text}
               onChange={this.update()}
-              placeholder="Write your comment.."
+              placeholder="Write your message.."
               />
               <input className="comment-submit" type="submit" value="Submit" />
             </div>
