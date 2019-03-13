@@ -1,5 +1,4 @@
 import React from 'react';
-import CommentBox from './comment_box';
 
 class CommentCompose extends React.Component {
   constructor(props) {
@@ -37,18 +36,15 @@ class CommentCompose extends React.Component {
   render() {
     return(
       
-        <form onSubmit={this.handleSubmit} className="comment-form-container">
-          <div className="comment-form">
-            <input type="textarea"
-              value ={this.state.text}
-              onChange={this.update()}
-              placeholder="Write your message.."
-              />
-              <input className="comment-submit" type="submit" value="Submit" />
-            </div>
-          </form>
+      <form onSubmit={this.handleSubmit} className="comment-form">
+        <input type="textarea"
+          value ={this.state.text}
+          onChange={this.update()}
+          placeholder="Write your message.."
+          />
+        <input className="comment-submit" type="submit" value="Submit" />
+      </form>
           
-        
     )
   }
 }
