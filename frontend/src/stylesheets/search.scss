@@ -38,3 +38,12 @@
   background-color: rgb(255, 204, 92);
   border: 1px solid rgb(221, 177, 82);
 }
+
+.candidates {
+  position: absolute;
+  top: 40%;
+}
+
+.candidates-names {
+  display: flex;
+}
