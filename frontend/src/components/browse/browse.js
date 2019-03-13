@@ -2,6 +2,8 @@ import React from 'react';
 import SearchContainer from '../search/search_container';
 import {Loader} from './loader';
 import ResultsContainer from '../results/results_container';
+import CommentsContainer from '../comments/comments_container';
+import '../../stylesheets/browse.scss';
 
 class Browse extends React.Component {
     constructor(props) {
@@ -9,13 +11,21 @@ class Browse extends React.Component {
     }
 
     render() {
+      let content
         if (!this.props.searchTerm) {
-            return <SearchContainer />;
-        } else if (this.props.searchTerm && this.props.sentiment.length===0) {
-            return <Loader />;
-        } else if (this.props.searchTerm && this.props.sentiment.length !==0 ) {
-            return <ResultsContainer />;
+           content =  <SearchContainer />;
+        } else if (this.props.searchTerm && this.props.sentiment.probabilities) {
+          content = <ResultsContainer />;
+        } else {
+          content = <Loader />
         }
+
+        return (
+          <div className="browse-container">
+            {content}
+            <CommentsContainer />
+          </div>
+        )
     }
 }
 
