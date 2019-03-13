@@ -8,7 +8,8 @@ const mapStateToProps = state => {
     comments: Object.values(state.comments.all),
     sentiments: state.entities.sentiments,
     search: state.search,
-    tweets: state.entities.tweets
+    tweets: state.entities.tweets,
+    emotions: state.entities.emotions.emotion
   };
 };
 

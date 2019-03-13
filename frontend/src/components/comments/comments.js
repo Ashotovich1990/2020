@@ -37,15 +37,13 @@ class Comments extends React.Component {
     } else {
       return (
         <aside className="comments-container">
-          <div className='comment-sidebar-sticky'>
-            <h2 id='comment-sidebar-title'>Join the Conversation</h2>
-            <div className='comment-sidebar-body'>
-              <ul>
+          <h2 id='comment-sidebar-title'>Join the Conversation</h2>
+          <div className='comment-sidebar-body'>
+            <ul>
               {this.state.comments.map(comment => (
-                <li className="comment-sidebar-list-item"><CommentBox key={comment._id} text = {comment.text} /></li>
+                <CommentBox key={comment._id} text = {comment.text} />
               ))}
-              </ul>
-              </div>
+            </ul>
           </div>
          <CommentComposeContainer />
         </aside>
