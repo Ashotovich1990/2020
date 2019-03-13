@@ -4,6 +4,7 @@ import { Switch } from 'react-router-dom';
 import NavBarContainer from './nav/navbar_container';
 import ChartContainer from '../charts/chart';
 import MainPage from './main/main_page';
+import ResultsContainer from './results/results_container';
 import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import CommentsContainer from './comments/comments_container';
@@ -17,8 +18,8 @@ const App = () => (
       <AuthRoute exact path="/" component={MainPage} />
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
-      <ProtectedRoute exact path="/browse" component={BrowseContainer} />
-      <ProtectedRoute exact path="/charts" component={ChartContainer} />
+      <AuthRoute exact path="/browse" component={BrowseContainer} />
+      <AuthRoute exact path="/charts" component={ChartContainer} />
       <ProtectedRoute exact path='/comments' component={CommentsContainer} />
       <ProtectedRoute exact path='/new_comment' component={CommentComposeContainer} />
     </Switch>
