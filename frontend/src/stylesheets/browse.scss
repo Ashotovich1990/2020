@@ -17,5 +17,31 @@
 
 .browse-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.methodology-container {
+  text-align: center;
+  font-family: 'Oswald';
+  margin-top: 40px;
+}
+
+.methodology-container p {
+  
+}
+
+.methodology-container h2 {
+  font-size: 28px;
+}
+
+.methodology-container .positiveLabel {
+  color: #88D8B0;
+}
+
+.methodology-container .neutralLabel {
+  color: #FFCC5C;
+}
+
+.methodology-container .negativeLabel {
+  color: #FF6F69;
 }

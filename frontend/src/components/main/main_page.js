@@ -20,9 +20,7 @@ class MainPage extends React.Component {
           </div>
         </div>
 
-        <footer className="main-page-footer">
-          <p>Copyright &copy; 2019{/* Chirper */}</p>
-        </footer>
+        
       </div>
     );
   }
