@@ -16,9 +16,9 @@ article, aside, figure, figcaption, footer, time, small {
   background: transparent;
 }
 
-html, body, #root {
+/* html, body, #root {
   height: 100%;
-}
+} */
 
 ul {
   list-style: none;

@@ -71,26 +71,31 @@ class LoginForm extends React.Component {
         <img className="splash-image"
           src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80"
           alt="laptop with visualized data" />
+
         <form onSubmit={this.handleSubmit}>
           <div className="login-form">
             <h2 className="login-form-heading">Log in to 2020</h2>
             <br />
+
             <label className="login-form-field">> <input type="text"
               value={this.state.username}
               onChange={this.update('username')}
               placeholder="Username" />
             </label>
             <br />
+
             <label className="login-form-field">> <input type="password"
               value={this.state.password}
               onChange={this.update('password')}
               placeholder="Password" />
             </label>
             <br />
-            <input className="login-form-submit" type="submit" value="Submit" />
-            <div id="demo-button">
-             <input className="demo-submit" onClick={this.handleDemo} type="submit" value="Demo"/>
+
+            <div className="login-form-buttons">
+              <input className="login-form-submit" type="submit" value="Submit" />
+              <input className="demo-submit" onClick={this.handleDemo} type="submit" value="Demo"/>
             </div>
+
             {this.renderErrors()}
           </div>
         </form>
