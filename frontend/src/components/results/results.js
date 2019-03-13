@@ -1,6 +1,7 @@
 import React from 'react';
 import {withRouter} from 'react-router-dom';
 import ChartContainer from '../../charts/chart';
+import ChartEmotionsContainer from '../../charts/chart_emotions';
 import Tweets from '../tweets/tweets';
 
 class Results extends React.Component {
@@ -16,6 +17,7 @@ class Results extends React.Component {
     return(
       <div className="results-page">
       <ChartContainer sentiments={this.props.sentiments }  search={this.props.search} tweets={this.props.tweets}/> 
+      <ChartEmotionsContainer emotions={this.props.emotions }  search={this.props.search} tweets={this.props.tweets}/> 
       <Tweets tweets={this.props.tweets} />
       </div> 
     )
