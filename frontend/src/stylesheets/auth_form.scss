@@ -38,7 +38,7 @@
   color: rgb(180, 180, 180);
 }
 
-.signup-form-submit, .login-form-submit {
+.signup-form-submit, .login-form-submit, .demo-submit {
   font-family: $Oswald;
   font-weight: 400;
   background-color: rgb(241, 238, 232);
@@ -47,6 +47,10 @@
   height: 40px;
   width: 80px;
   text-align: center;
+}
+
+#demo-button {
+  margin-top: 4px;
 }
 
 .signup-form-submit:hover, .login-form-submit:hover {
