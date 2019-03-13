@@ -15,7 +15,7 @@ class Results extends React.Component {
     return(
       <div>
         
-      <ChartContainer sentiments={this.props.sentiments}/> 
+      <ChartContainer sentiments={this.props.sentiments }  search={this.props.search} tweets={this.props.tweets}/> 
       </div> 
     )
   }
