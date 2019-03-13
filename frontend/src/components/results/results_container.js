@@ -6,7 +6,9 @@ const mapStateToProps = state => {
   
   return {
     comments: Object.values(state.comments.all),
-    sentiments: state.entities.sentiments
+    sentiments: state.entities.sentiments,
+    search: state.search,
+    tweets: state.entities.tweets
   };
 };
 
