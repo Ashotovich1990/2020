@@ -4,6 +4,7 @@ import errors from './errors_reducer';
 import comments from './comments_reducer';
 import entities from './entities_reducer'
 import search from './search_reducer'
+import demo from './demo_reducer';
 
 const RootReducer = combineReducers({
   entities,
@@ -11,6 +12,7 @@ const RootReducer = combineReducers({
   errors,
   comments,
   search,
+  demo,
 });
 
 export default RootReducer;
