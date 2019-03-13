@@ -5,9 +5,6 @@ import '../../stylesheets/tweets.scss';
 class Tweets extends React.Component {
   constructor(props) {
     super (props);
-    // this.state = {
-    //   tweets: []
-    // }
   }
 
   render() {
@@ -17,9 +14,12 @@ class Tweets extends React.Component {
     ));
 
     return (
-      <ul className="tweets-list">
-        {tweets}
-      </ul>
+      <div className="tweets-list-container">
+        <h1 className="tweets-header">Tweets Analyzed</h1>
+        <ul className="tweets-list">
+          {tweets}
+        </ul>
+      </div>
     )
   }
 }
