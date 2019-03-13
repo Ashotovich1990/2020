@@ -7,7 +7,7 @@ const axios = require('axios');
 
 
 
-const config = {headers: headers};
+// const config = {headers: headers};
 
 // const sentiment = require("../../config/keys_sentiment.js");
 
@@ -37,12 +37,12 @@ router.get("/all", (req, res) => {
 
         function (e, data, response) {
         if (e) console.error(e);        
-
-        tweets = JSON.parse(data)
-        .statuses.map(status => status.text);
+        
+        tweets = JSON.parse(data).statuses.map(status => status.text);
+        
 
         auth = "as7FTR2m6ycuNE38XWXwo4FyAsYW3jnWwZmvUGoR1ps";
-        url = 'https://apis.paralleldots.com/v3/sentiment';
+        // url = 'https://apis.paralleldots.com/v3/sentiment';
 
 
         request.post({
@@ -56,18 +56,64 @@ router.get("/all", (req, res) => {
                 }
                 
             },
+
+
+            
         function optionalCallback(error, httpResponse, body) {
         if (error) {
             return console.error('upload failed:', error);
+        }
+        const sentiment = JSON.parse(body);
 
-        // tweets = JSON.parse(data).statuses.map(status => status.text)
-        // return res.json(tweets);     
+        request.post({
+                    url: 'https://apis.paralleldots.com/v3/emotion',
+                    formData:
+                    {
+                        "Content-type": "application/json",
+                        "text": tweets,
+                        "api_key": auth
+                        
+                        }
+                        
+                    },
+                function optionalCallback(error, httpResponse, body) {
+                if (error) {
+                    return console.error('upload failed:', error);
+                }
+                const emotion = JSON.parse(body);
+                
+                 
+                return res.json({sentiment, tweets, emotion});    
+        
+                })
+       
+        // return res.json({sentiment, tweets});   
 
         }
-        const result = JSON.parse(body)
-        return res.json({sentiment: result, tweets});   
-
-        });
+        )
+        // .then(() => (
+        //     request.get({
+        //         url: 'https://apis.paralleldots.com/v3/emotion',
+        //         formData:
+        //         {
+        //             "Content-type": "application/json",
+        //             "text": tweets,
+        //             "api_key": auth
+                    
+        //             }
+                    
+        //         },
+        //     function optionalCallback(error, httpResponse, body) {
+        //     if (error) {
+        //         return console.error('upload failed:', error);
+        //     }
+        //     const emotion = JSON.parse(body);
+        //     result[emotion] = emotion;
+             
+        //     return result;   
+    
+        //     })
+        // ))
     });
 });
 
