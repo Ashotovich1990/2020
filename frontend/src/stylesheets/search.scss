@@ -23,11 +23,10 @@
 .search-button {
   margin-left: 20px;
   font-family: $Oswald;
-  font-size: 25px;
-  font-weight: 300;
-  background-color: rgb(253, 193, 70);
-  border: 1px solid rgb(207, 159, 63);
-  color: rgb(31, 23, 9);
+  font-size: 22px;
+  font-weight: 400;
+  background-color: #88D8B0;
+  color: #333;
   border-radius: 10px;
   height: 40px;
   width: 100px;
@@ -35,6 +34,6 @@
 }
 
 .search-button:hover {
-  background-color: rgb(255, 204, 92);
-  border: 1px solid rgb(221, 177, 82);
+  background-color: #90e5bb;
+
 }
