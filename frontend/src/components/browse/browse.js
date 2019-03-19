@@ -15,7 +15,12 @@ class Browse extends React.Component {
         if (!this.props.searchTerm) {
            content =  <SearchContainer />;
         } else if (this.props.searchTerm && this.props.sentiment.probabilities) {
-          content = <ResultsContainer />;
+          content = (
+          <div>
+            <SearchContainer />;
+            <ResultsContainer />
+          </div>
+          );
         } else {
           content = <Loader />
         }
