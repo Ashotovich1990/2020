@@ -1,4 +1,6 @@
 @import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto');
+
 
 .app {
   height: 100%;
@@ -13,7 +15,10 @@
 }
 
 .main-page {
-  height: 100%;
+height: calc(100% - 80px);
+   background: 
+      rgba(0, 0, 0, 0.5);
+      overflow: hidden;
 }
 
 .main-page-content-container {
@@ -22,42 +27,54 @@
   align-items: center;
   margin: auto;
   height: 93%;
+ 
+     background-position: fixed;
+
 }
 
 .main-page-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD
+  
+=======
   margin-top: 150px;
+>>>>>>> master
   height: 300px;
   width: 750px;
-  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
 }
 
 .main-page-content > h1 {
   margin: 10px;
-  font-family: $Crimson;
+  font-family: $Oswald;
   font-size: 50px;
+  margin: 0;
+  color: #f1f1f1;
 }
 
 .main-page-button {
   margin: 30px;
   font-family: $Oswald;
-  font-weight: 300;
-  font-size: 30px;
-  background-color: rgb(253, 193, 70);
-  border: 1px solid rgb(207, 159, 63);
-  color: rgb(31, 23, 9);
+  font-weight: 500;
+  font-size: 26px;
+  color: #f1f1f1;
   border-radius: 10px;
   height: 50px;
   width: 170px;
   text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid  rgba(255, 255, 255, 0.5);
 }
 
 .main-page-button:hover {
-  background-color: rgb(255, 204, 92);
-  border: 1px solid rgb(221, 177, 82);
+  background: rgba(255, 255, 255, 0.7);
+  color: #333;
 }
 
 .main-page-footer {
@@ -69,6 +86,6 @@
 
 .main-page-footer > p {
   margin: auto 20px;
-  font-family: $Crimson;
+  font-family: $Oswald;
   font-size: 14px;
 }
