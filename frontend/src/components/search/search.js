@@ -7,23 +7,38 @@ class Search extends React.Component {
     this.state = { searchTerm: ""}
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.handleCandidate = this.handleCandidate.bind(this);
   }
 
   handleChange(e) {
     this.setState( {searchTerm: e.target.value })
   }
 
-    handleClick() {
-        this.props.receiveSearch(this.state.searchTerm);
-        this.props.fetchTweets(this.state.searchTerm);
-    }
+  handleClick() {
+      this.props.receiveSearch(this.state.searchTerm);
+      this.props.fetchTweets(this.state.searchTerm);
+  }
+
+  handleCandidate(e) {
+    this.props.receiveSearch(e.target.id);
+    this.props.fetchTweets(e.target.id);
+  }
 
   render() {
+    const candidates = !this.props.search?  
+    (<div className="candidates">
+    <ul className="candidates-names-ul">
+      {this.props.candidates.map((name,idx) => <li onClick={this.handleCandidate} key={idx} id={name} className="candidates-names"> {name} </li>) }
+    </ul>
+ </div>)
+    : 
+    <div></div> ;
     return (
       <div className="search-page">
         <div className="search-bar">
           <input className="search-box" type="text" onChange={this.handleChange} placeholder="Enter name..."/>
           <input className="search-button" type="submit" onClick={this.handleClick} value="Search"/>
+          {candidates}
         </div>
       </div>
     )
