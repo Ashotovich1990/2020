@@ -16,20 +16,16 @@ class Methodology extends React.Component {
     return (
       
       <div className="methodology-container">
-        <h2>Methodology</h2>
-        <div>
-          The following graph contains the following data points:
-          <br/>
-          <br/>
-          Data is based off {tweetCount} tweets
-          <br/>
-          Positive score: {positive}
-          <br/>
-          Neutral score: {neutral}
-          <br/>
-          Negative score: {negative}
-          <br/>
-        </div>
+        <h2>Methodology</h2> 
+        
+        <p>The following graph contains the following data points:</p>
+        
+        <p>Data is based off {tweetCount} tweets</p>
+        <p><span className="positiveLabel">Positive score:</span> {positive}</p>
+        <p><span className="neutralLabel">Neutral score:</span> {neutral}</p>
+        <p><span className="negativeLabel">Negative score:</span> {negative}</p>
+     
+      
       </div>
     );
   }
