@@ -5,6 +5,7 @@ import Search from './search';
 
 const mapStateToProps = state => ({
   candidates: state.entities.candidates,
+  search: state.search
 });
 
 const mapDispatchToProps = dispatch => ({
