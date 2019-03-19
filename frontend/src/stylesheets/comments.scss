@@ -32,21 +32,18 @@
 }
 
 .comments-container{
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   box-sizing: border-box;
   line-height: 1.5;
-  
-}
-.comment-sidebar-sticky{
-  
+  width: 25%;
+  font-family: $Crimson;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 300px;
+  // width: 300px;
 }
+
 #comment-sidebar-title{
   font-family: $Oswald;
   color: #FF6F69;
@@ -54,11 +51,17 @@
   font-weight: bold;
   letter-spacing: 0.05em;
   margin: 0;
+  width: 25%;
   padding-top: 0.5rem;
 }
+
 .comment-sidebar-body{
+  position: fixed;
+  overflow-y: scroll;
+  top: inherit;
+  bottom: 0;
   overflow: auto;
-  display: block;
+  // display: block;
   color: black;
   line-height: 1.5;
   
@@ -72,12 +75,35 @@
 color: #333;
 font-size: 16px;
 }
+
 .list-item-container{
-  margin: 0;
-  background-color: #DCDCDC;
+  margin: 1px;
+  background-color: rgb(235, 230, 220);
   border: 1px solid white;
   border-radius: 4px;
   text-align: center;
-  max-width: 300px;
+  max-width: 287px;
+  width: inherit;
   overflow-wrap: break-word;
+}
+
+.comment-form{
+  width: 300px;
+  display:flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 4px 2px rgba(35, 35, 35, 0.15);
+}
+
+.comment-submit{
+  background-color: #26798C;
+  border: 1px solid #26798C;
+  color: white;
+  padding: 0.4rem;
+  letter-spacing: 0.1em;
+  border-radius: 10px;
+  font-family: $Oswald;
+  font-weight: 300;
 }
