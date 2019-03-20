@@ -27,9 +27,11 @@ class Comments extends React.Component {
       return (
         <aside className="comments-container">
           <div className='comment-sidebar-sticky'>
-            <h2 id='comment-sidebar-title'>Join the Conversation</h2>
+
             <div className='comment-sidebar-body'>
+
             </div>
+
           </div>
           <CommentComposeContainer />
         </aside>
@@ -37,8 +39,8 @@ class Comments extends React.Component {
     } else {
       return (
         <aside className="comments-container">
-          <h2 id='comment-sidebar-title'>Join the Conversation</h2>
           <div className='comment-sidebar-body'>
+          <h2 id="commentBoxHeader">Join the conversation</h2>
             <ul>
               {this.state.comments.map(comment => (
                 <CommentBox key={comment._id} text = {comment.text} />
