@@ -3,8 +3,9 @@ import { fetchComments } from '../../actions/comment_actions';
 import Comments from './comments';
 
 const mapStateToProps = state => {
+ 
   return {
-    comments: Object.values(state.comments.all)
+    comments: state.comments.all,
   };
 };
 
