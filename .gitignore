@@ -1,4 +1,6 @@
 /node_modules
 /config/keys_dev.js
+/config/keys_twitter.js
+/config/keys_twitter_dev.js
 /frontend/node_modules
 config/keys_twitter_dev.js
