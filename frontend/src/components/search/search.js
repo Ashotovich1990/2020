@@ -25,16 +25,20 @@ class Search extends React.Component {
   }
 
   render() {
+    const candidates = !this.props.search?  
+    (<div className="candidates">
+    <ul className="candidates-names-ul">
+      {this.props.candidates.map((name,idx) => <li onClick={this.handleCandidate} key={idx} id={name} className="candidates-names"> {name} </li>) }
+    </ul>
+ </div>)
+    : 
+    <div></div> ;
     return (
       <div className="search-page">
         <div className="search-bar">
-          <input className="search-box" type="text" onChange={this.handleChange}/>
+          <input className="search-box" type="text" onChange={this.handleChange} placeholder="Enter name..."/>
           <input className="search-button" type="submit" onClick={this.handleClick} value="Search"/>
-          <div className="candidates">
-             <ul className="candidates-names-ul">
-               {this.props.candidates.map((name) => <li onClick={this.handleCandidate} id={name} className="candidates-names"> {name} </li>) }
-             </ul>
-          </div>
+          {candidates}
         </div>
       </div>
     )
