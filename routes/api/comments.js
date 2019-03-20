@@ -8,6 +8,7 @@ const validateCommentInput = require('../../validation/comments');
 
 router.get('/', (req, res) => {
     Comment.find()
+        .populate('user')
         .sort({ date: -1 })
         .then(comments => res.json(comments))
         .catch(err => res.status(404).json({ nocommentsfound: 'No comments found' }));
@@ -41,9 +42,12 @@ router.post('/',
   
       const newComment = new Comment({
         text: req.body.text,
-        user: req.user.id
-      });
-      newComment.save().then(comment => res.json(comment));
+        user:req.user, 
+          
+        });
+      newComment
+      .save()
+      .then(comment => res.json(comment));
     }
   );
 
