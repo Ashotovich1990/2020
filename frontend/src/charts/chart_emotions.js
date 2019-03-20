@@ -1,6 +1,6 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
-import MethodologyEmotions from './methodology';
+import MethodologyEmotions from './methodology_emotions';
 
 class ChartEmotionsContainer extends React.Component {
     constructor(props){
@@ -16,7 +16,7 @@ class ChartEmotionsContainer extends React.Component {
                 labels: ["Excited", "Fear", "Bored", "Sad", "Happy", "Angry"],
                 datasets: [{
                     label: `Public opinion on ${this.props.search}`,
-                    backgroundColor: [ '#88D8B0', '#FF6F69','#FFCC5C','#FFFF00','#008080','#800080'],
+                    backgroundColor: [ '#88D8B0', '#FF6F69','#FFCC5C','#800080','#FFFF00','#000080'],
                     data: [this.props.emotions.probabilities.Excited, this.props.emotions.probabilities.Fear, this.props.emotions.probabilities.Bored,this.props.emotions.probabilities.Sad,this.props.emotions.probabilities.Happy,this.props.emotions.probabilities.Angry],
                 }]
             }
@@ -42,7 +42,7 @@ class ChartEmotionsContainer extends React.Component {
 
         return(
             <div className="graph-container">
-                {/* < MethodologyEmotions emotions={this.props.emotions} tweets={this.props.tweets} /> */}
+                < MethodologyEmotions emotions={this.props.emotions} tweets={this.props.tweets} />
                 < Doughnut data={data} options={options} />
             </div>
         ) 

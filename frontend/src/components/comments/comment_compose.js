@@ -12,9 +12,9 @@ class CommentCompose extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({newComment: nextProps.newComment.text});
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   this.setState({newComment: nextProps.newComment.text});
+  // }
 
   handleSubmit(e) {
     e.preventDefault();
@@ -24,7 +24,7 @@ class CommentCompose extends React.Component {
     };
 
     this.props.composeComment(comment);
-    this.setState({text: ""})
+    this.setState({text: ""});
   }
 
   update() {
@@ -36,13 +36,13 @@ class CommentCompose extends React.Component {
   render() {
     return(
       
-      <form onSubmit={this.handleSubmit} className="comment-form">
+      <form  className="comment-form">
         <input type="textarea"
           value ={this.state.text}
           onChange={this.update()}
           placeholder="Write your message.."
           />
-        <input className="comment-submit" type="submit" value="Submit" />
+        <input onClick={this.handleSubmit} className="comment-submit" type="submit" value="Submit" />
       </form>
           
     )

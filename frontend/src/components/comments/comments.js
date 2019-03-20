@@ -13,13 +13,19 @@ class Comments extends React.Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.fetchComments();
   }
 
-  componentWillReceiveProps(newState) {
-    this.setState({ comments: newState.comments });
-  }
+  // componentWillReceiveProps(newState) {
+  //   this.setState({ comments: newState.comments });
+  // }
+  
+  // componentWillUpdate(prevProps) {
+  //   if (this.props.comments.length != prevProps.comments.length) {
+  //     this.props.fetchComments();
+  //   }
+  // }
 
   render() {
     
@@ -37,20 +43,24 @@ class Comments extends React.Component {
         </aside>
       )
     } else {
+
       return (
         <aside className="comments-container">
           <div className='comment-sidebar-body'>
           <h2 id="commentBoxHeader">Join the conversation</h2>
             <ul>
-              {this.state.comments.map(comment => (
-                <CommentBox key={comment._id} text = {comment.text} />
+           
+              {this.props.comments.map(comment => (
+                <CommentBox key={comment._id}
+                  username={comment.user.username}
+                  text = {comment.text} />
               ))}
             </ul>
           </div>
          <CommentComposeContainer />
         </aside>
       )
-    }
+    // }
     
   }
 }
