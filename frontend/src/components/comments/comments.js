@@ -16,34 +16,8 @@ class Comments extends React.Component {
   componentDidMount() {
     this.props.fetchComments();
   }
-
-  // componentWillReceiveProps(newState) {
-  //   this.setState({ comments: newState.comments });
-  // }
   
-  // componentWillUpdate(prevProps) {
-  //   if (this.props.comments.length != prevProps.comments.length) {
-  //     this.props.fetchComments();
-  //   }
-  // }
-
   render() {
-    
-    if (this.state.comments.length === 0) {
-      return (
-        <aside className="comments-container">
-          <div className='comment-sidebar-sticky'>
-
-            <div className='comment-sidebar-body'>
-
-            </div>
-
-          </div>
-          <CommentComposeContainer />
-        </aside>
-      )
-    } else {
-
       return (
         <aside className="comments-container">
           <div className='comment-sidebar-body'>
@@ -59,9 +33,7 @@ class Comments extends React.Component {
           </div>
          <CommentComposeContainer />
         </aside>
-      )
-    // }
-    
+      )    
   }
 }
 
