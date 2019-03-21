@@ -4,23 +4,35 @@
 .search-page, .results-page {
   width: 75%;
 }
+
+.candidates h2 {
+  font-family: $Oswald;
+  font-size: 24px;
+}
+
 .candidates{
-  width: 400px;
+  justify-content: center;
+  width: 650px;
   height: 400px;
   display: flex;
-  top: 50%;
+  flex-wrap: wrap;
+  top: 300px;
   position: absolute;
 }
 .candidates-names {
-  padding-top: 8px;
-  padding-bottom: 2px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 3px 8px;
   background-color: #87ceeb;
   border-radius: 4px;
   text-align: center;
-  margin-top: 5px;
-  margin-right: 5px;
+  margin-top: 8px;
+  margin-right: 8px;
+  font-size: 16px;
+  font-family: $Oswald;
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+
 }
 .candidates-names:hover{
   cursor: pointer;
@@ -28,6 +40,9 @@
 .candidates-names-ul{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  width: 600px;
 }
 .search-page {
   width: 100%;
@@ -47,22 +62,31 @@
   width: 500px;
   font-family: $Oswald;
   font-size: 30px;
+  margin-right: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .search-button {
+    box-shadow: 1px 1px 4px 2px rgba(35, 35, 35, 0.15);
+  font-weight: bold;
   margin-left: 20px;
   font-family: $Oswald;
-  font-size: 22px;
-  font-weight: 400;
-  background-color: #88D8B0;
-  color: #333;
-  border-radius: 10px;
-  height: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: #FF4E47;
+  color: #111;
+  margin-left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 53px;
   width: 100px;
   text-align: center;
 }
 
 .search-button:hover {
-  background-color: #90e5bb;
+  background-color: #FF6F69;
 
 }
+
+

@@ -2,12 +2,16 @@
 
 
 .comment-submit{
-  background-color: #FFCC5C;
-  color: #333;
   padding: 0.4rem;
   border-radius: 10px;
   font-family: $Oswald;
 }
+
+.comment-submit:hover {
+  background-color: #800080;
+}
+
+
 
 .comment-form-container{
   width: 300px;
@@ -44,33 +48,23 @@
   // width: 300px;
 }
 
-#comment-sidebar-title{
-  font-family: $Oswald;
-  color: #FF6F69;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  margin: 0;
-  width: 25%;
-  padding-top: 0.5rem;
-}
-
 .comment-sidebar-body{
+  max-height: 80vh;
   position: fixed;
   overflow-y: scroll;
-  top: inherit;
-  bottom: 0;
+  right: 0;
+  bottom: 50px;
   overflow: auto;
   // display: block;
   color: black;
   line-height: 1.5;
-  
+  font-family: $Oswald;
 }
 .comment-sidebar-list-item{
   list-style: none;
   font-weight: 400;
   font-style: normal;
-  width: 300px;
+  width: 100%;
     font-family: $Oswald;
 color: #333;
 font-size: 16px;
@@ -82,10 +76,12 @@ font-size: 16px;
   border: 1px solid white;
   border-radius: 4px;
   text-align: center;
-  max-width: 287px;
+  max-width: 300px;
   width: inherit;
   overflow-wrap: break-word;
 }
+
+
 
 .comment-form{
   width: 300px;
@@ -93,17 +89,24 @@ font-size: 16px;
   justify-content: space-between;
   position: fixed;
   bottom: 0;
+  right: 0;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 1px 4px 2px rgba(35, 35, 35, 0.15);
 }
 
 .comment-submit{
-  background-color: #26798C;
-  border: 1px solid #26798C;
+  background-color: #750075;
   color: white;
   padding: 0.4rem;
   letter-spacing: 0.1em;
-  border-radius: 10px;
-  font-family: $Oswald;
-  font-weight: 300;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+#commentBoxHeader {
+  font-size: 24px;
+  color: #750075;
 }
