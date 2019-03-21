@@ -29,23 +29,25 @@ class Comments extends React.Component {
 
   render() {
     
-    // if (this.state.comments.length === 0) {
-    //   return (
-    //     <aside className="comments-container">
-    //       <div className='comment-sidebar-sticky'>
-    //         <h2 id='comment-sidebar-title'>Join the Conversation</h2>
-    //         <div className='comment-sidebar-body'>
-    //         </div>
-    //       </div>
-    //       <CommentComposeContainer />
-    //     </aside>
-    //   )
-    // } else {
-     
+    if (this.state.comments.length === 0) {
       return (
         <aside className="comments-container">
-          <h2 id='comment-sidebar-title'>Join the Conversation</h2>
+          <div className='comment-sidebar-sticky'>
+
+            <div className='comment-sidebar-body'>
+
+            </div>
+
+          </div>
+          <CommentComposeContainer />
+        </aside>
+      )
+    } else {
+
+      return (
+        <aside className="comments-container">
           <div className='comment-sidebar-body'>
+          <h2 id="commentBoxHeader">Join the conversation</h2>
             <ul>
            
               {this.props.comments.map(comment => (

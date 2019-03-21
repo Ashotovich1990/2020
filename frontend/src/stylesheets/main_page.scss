@@ -1,6 +1,5 @@
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .app {
   height: 100%;
@@ -27,9 +26,7 @@ height: calc(100% - 80px);
   align-items: center;
   margin: auto;
   height: 93%;
- 
-     background-position: fixed;
-
+  background-position: fixed;
 }
 
 .main-page-content {

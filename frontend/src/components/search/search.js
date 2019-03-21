@@ -27,6 +27,7 @@ class Search extends React.Component {
   render() {
     const candidates = !this.props.search?  
     (<div className="candidates">
+    <h2>Trending Politicians</h2>
     <ul className="candidates-names-ul">
       {this.props.candidates.map((name,idx) => <li onClick={this.handleCandidate} key={idx} id={name} className="candidates-names"> {name} </li>) }
     </ul>
