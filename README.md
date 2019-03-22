@@ -1,5 +1,7 @@
 # 2020
 
+[Live Demo](https://fast-savannah-76615.herokuapp.com/#/)
+
 2020 is a data visualization application that gives users a glance at public sentiment about an upcoming 2020 political figure.
 
 ### Background and Overview
