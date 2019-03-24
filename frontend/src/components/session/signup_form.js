@@ -51,6 +51,11 @@ class SignupForm extends React.Component {
     this.props.login(this.props.demo);
   }
 
+  handleClick(e) {
+    e.preventDefault();
+    this.props.login(this.props.demo);
+  }
+
   renderErrors() {
     return (
       <ul className="signup-form-errors">
