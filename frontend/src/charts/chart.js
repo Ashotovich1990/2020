@@ -3,10 +3,7 @@ import { Doughnut } from 'react-chartjs-2';
 import Methodology from './methodology';
 
 class ChartContainer extends React.Component {
-    constructor(props){
-        super(props);
-    }
-
+    
     render() {
         let data;
         

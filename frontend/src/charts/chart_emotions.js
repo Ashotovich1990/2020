@@ -3,10 +3,7 @@ import { Doughnut } from 'react-chartjs-2';
 import MethodologyEmotions from './methodology_emotions';
 
 class ChartEmotionsContainer extends React.Component {
-    constructor(props){
-        super(props);
-    }
-
+    
     render() {
         let data;
         
