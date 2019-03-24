@@ -13,6 +13,7 @@ class SignupForm extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.clearedErrors = false;
   }
 
@@ -39,6 +40,11 @@ class SignupForm extends React.Component {
     };
 
     this.props.signup(user, this.props.history);
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+    this.props.login(this.props.demo);
   }
 
   renderErrors() {
@@ -82,7 +88,10 @@ class SignupForm extends React.Component {
               placeholder="Confirm Password" />
             </label>
             <br />
-            <input className="signup-form-submit" type="submit" value="Submit" />
+            <div className="login-form-buttons">
+              <input className="signup-form-submit" type="submit" value="Submit" />
+              <input onClick={this.handleClick} className="demo-submit" type="submit" value="Demo" />
+            </div>
             {this.renderErrors()}
           </div>
         </form>
