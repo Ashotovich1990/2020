@@ -15,7 +15,7 @@ const axios = require('axios');
 
 router.get("/all", (req, res) => {
     const hashTag = req.query.tag;
-    const URL = `https://api.twitter.com/1.1/search/tweets.json?lang=en&count=100&result_type=recent&exclude_replies=true&q=${hashTag}%20-filter%3Aretweets` 
+    const URL = `https://api.twitter.com/1.1/search/tweets.json?lang=en&count=100&result_type=recent&exclude_replies=true&q=${hashTag}%20-filter%3Aretweets&tweet_mode=extended` 
 
     const oauth = new OAuth.OAuth(
         'https://api.twitter.com/oauth/request_token',
@@ -38,7 +38,7 @@ router.get("/all", (req, res) => {
         function (e, data, response) {
         if (e) console.error(e);        
         
-        tweets = JSON.parse(data).statuses.map(status => status.text);
+        tweets = JSON.parse(data).statuses.map(status => status.full_text);
         
 
         auth = "as7FTR2m6ycuNE38XWXwo4FyAsYW3jnWwZmvUGoR1ps";
