@@ -14,7 +14,6 @@ class NavBar extends React.Component {
     this.props.logout();
   }
 
-  /* What links should we have? */
   getLinks() {
     if (this.props.loggedIn) {
       return (
