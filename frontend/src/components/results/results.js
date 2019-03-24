@@ -5,10 +5,7 @@ import ChartEmotionsContainer from '../../charts/chart_emotions';
 import Tweets from '../tweets/tweets';
 
 class Results extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+  
   componentWillMount() {
     this.props.fetchComments();
   }
