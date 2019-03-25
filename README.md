@@ -27,15 +27,14 @@ The bottom of the page screen will feature an unobtrusive fixed bar for links to
 ### Challenges
 In development of 2020, the main functionality and largest challenge was building the Twitter API calls into the Express backend to avoid any CORS issues. Unlike the ParallelDots Sentiment/Emotion Text-Analysis API which used a HTTP request method, the Twitter authentication model relies on Oauth2 and a bearer token. Additionally, in order to get adequate tweet results based on the query, certain parameters needed to be adjusted accord to the user input. As a final step to the backend implementation, the output of the Twitter API call needed to be parsed and input into an array for the resulting ParellelDots API call to be execute.
 
-Further challenges challenges arose as the resulting sentiments and emotions text-analyses data needed to be brought to the frontend for data visualization. The analysis data needs to be structured in such a way that that Chart.js is able to interpret the results.
-
 ```
 Sample code here // which parts to show off
 ```
+![search2020](https://user-images.githubusercontent.com/36525199/54912239-78880680-4ead-11e9-88b7-790d6698a58e.JPG)
 
-```
-Images of graph and browse page with comments
-```
+Further challenges challenges arose as the resulting sentiments and emotions text-analyses data needed to be brought to the frontend for data visualization. The analysis data needs to be structured in such a way that that Chart.js is able to interpret the results.
+
+![graph2020](https://user-images.githubusercontent.com/36525199/54912136-32cb3e00-4ead-11e9-886d-714aa88c2897.JPG)
 
 ### Group Members
 **Team: Viviene De Guzman, David Park, Aram Sargsyan, Corrie Stoddard**
