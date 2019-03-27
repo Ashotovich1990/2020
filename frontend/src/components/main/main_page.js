@@ -24,21 +24,31 @@ class MainPage extends React.Component {
         
         
 
-        {/* <footer className="main-page-footer">
-          <p>Copyright &copy; 2019</p>
-        </footer> */}
+  
       </div>
       <div className="main-page-info">
           <div className="main-page-info-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper. Integer nec magna nec purus viverra dignissim. Proin cursus sed velit a consequat. Aenean malesuada ligula a pharetra vestibulum. Sed eget porttitor sapien, sit amet vehicula odio. Vivamus finibus ligula at quam accumsan, vel cursus urna aliquet. Morbi fermentum erat nec gravida maximus. Sed orci mauris, venenatis sit amet nunc eget, ullamcorper scelerisque arcu. Aenean condimentum urna nec sollicitudin volutpat. Integer in blandit leo. Aenean gravida aliquet hendrerit.
+            <i class="fab fa-asymmetrik fa-3x"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper. Integer nec magna nec purus viverra dignissim. Proin cursus sed velit a consequat. Aenean malesuada ligula a pharetra vestibulum. Sed eget porttitor sapien, sit amet vehicula odio. Vivamus finibus ligula at quam accumsan, vel cursus urna aliquet. Morbi fermentum erat nec gravida maximus. Sed orci mauris, venenatis sit amet nunc eget, ullamcorper scelerisque arcu. Aenean condimentum urna nec sollicitudin volutpat. Integer in blandit leo. Aenean gravida aliquet hendrerit.</p>
             </div>
           <div className="main-page-info-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper. Integer nec magna nec purus viverra dignissim. Proin cursus sed velit a consequat. Aenean malesuada ligula a pharetra vestibulum. Sed eget porttitor sapien, sit amet vehicula odio. Vivamus finibus ligula at quam accumsan, vel cursus urna aliquet. Morbi fermentum erat nec gravida maximus. Sed orci mauris, venenatis sit amet nunc eget, ullamcorper scelerisque arcu. Aenean condimentum urna nec sollicitudin volutpat. Integer in blandit leo. Aenean gravida aliquet hendrerit.
+            <i class="fab fa-asymmetrik fa-3x"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper. Integer nec magna nec purus viverra dignissim. Proin cursus sed velit a consequat. Aenean malesuada ligula a pharetra vestibulum. Sed eget porttitor sapien, sit amet vehicula odio. Vivamus finibus ligula at quam accumsan, vel cursus urna aliquet. Morbi fermentum erat nec gravida maximus. Sed orci mauris, venenatis sit amet nunc eget, ullamcorper scelerisque arcu. Aenean condimentum urna nec sollicitudin volutpat. Integer in blandit leo. Aenean gravida aliquet hendrerit.</p>
             </div>
           <div className="main-page-info-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper. Integer nec magna nec purus viverra dignissim. Proin cursus sed velit a consequat. Aenean malesuada ligula a pharetra vestibulum. Sed eget porttitor sapien, sit amet vehicula odio. Vivamus finibus ligula at quam accumsan, vel cursus urna aliquet. Morbi fermentum erat nec gravida maximus. Sed orci mauris, venenatis sit amet nunc eget, ullamcorper scelerisque arcu. Aenean condimentum urna nec sollicitudin volutpat. Integer in blandit leo. Aenean gravida aliquet hendrerit.
+            <i class="fab fa-asymmetrik fa-3x"></i>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper. Integer nec magna nec purus viverra dignissim. Proin cursus sed velit a consequat. Aenean malesuada ligula a pharetra vestibulum. Sed eget porttitor sapien, sit amet vehicula odio. Vivamus finibus ligula at quam accumsan, vel cursus urna aliquet. Morbi fermentum erat nec gravida maximus. Sed orci mauris, venenatis sit amet nunc eget, ullamcorper scelerisque arcu. Aenean condimentum urna nec sollicitudin volutpat. Integer in blandit leo. Aenean gravida aliquet hendrerit.</p>
             </div>
-        </div></div>
+        </div>
+        <div className="main-page-about"> 
+          <img src="https://cdn.pixabay.com/photo/2019/03/25/09/57/bad-look-4079817_1280.jpg"></img>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper. Integer nec magna nec purus viverra dignissim. Proin cursus sed velit a consequat. Aenean malesuada ligula a pharetra vestibulum. Sed eget porttitor sapien, sit amet vehicula odio. Vivamus finibus ligula at quam accumsan, vel cursus urna aliquet. Morbi fermentum erat nec gravida maximus. Sed orci mauris, venenatis sit amet nunc eget, ullamcorper scelerisque arcu. Aenean condimentum urna nec sollicitudin volutpat. Integer in blandit leo. Aenean gravida aliquet hendrerit.</span>
+</div>
+        <div className="main-page-footer">
+          <p>Copyright &copy; 2019</p>
+        </div>
+      </div>
     );
   }
 }

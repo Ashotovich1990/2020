@@ -25,6 +25,7 @@
   background: 
     rgba(0, 0, 0, 0.5);
     overflow: hidden;
+  
 }
 
 .main-page-content-container {
@@ -42,6 +43,7 @@
   align-items: center;
   width: 750px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .main-page-content > h1 {
@@ -89,17 +91,43 @@
 }
 
 .main-page-info {
+    font-family: $Oswald;
+
   height: 600px !important;
   background: #ccc;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: $Oswald;
   
 }
 
 .main-page-info-content{
-  height: 300px;
+  height: 400px;
   width: 300px;
+  font-size: 20px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.main-page-about {
+    font-family: $Oswald;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  background: #efefef;
+}
+
+.main-page-about img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.main-page-about span {
+  width: 50%;
 }
