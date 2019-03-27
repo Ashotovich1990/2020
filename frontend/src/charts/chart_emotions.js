@@ -39,8 +39,8 @@ class ChartEmotionsContainer extends React.Component {
 
         return(
             <div className="graph-container">
-                < MethodologyEmotions emotions={this.props.emotions} tweets={this.props.tweets} />
                 < Doughnut data={data} options={options} />
+                < MethodologyEmotions emotions={this.props.emotions} tweets={this.props.tweets} />
             </div>
         ) 
 
