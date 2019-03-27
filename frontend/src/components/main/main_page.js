@@ -6,6 +6,7 @@ class MainPage extends React.Component {
 
   render() {
     return (
+      <div>
       <div className="main-page">
         {/* image from Lukas Blazek on unsplash.com */}
         <img className="splash-image"
@@ -18,12 +19,26 @@ class MainPage extends React.Component {
             <h1>See what people on Twitter think.</h1>
             <Link to={'/signup'} className="main-page-button">Start Looking</Link>
           </div>
+          
         </div>
+        
+        
 
         {/* <footer className="main-page-footer">
           <p>Copyright &copy; 2019</p>
         </footer> */}
       </div>
+      <div className="main-page-info">
+          <div className="main-page-info-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper. Integer nec magna nec purus viverra dignissim. Proin cursus sed velit a consequat. Aenean malesuada ligula a pharetra vestibulum. Sed eget porttitor sapien, sit amet vehicula odio. Vivamus finibus ligula at quam accumsan, vel cursus urna aliquet. Morbi fermentum erat nec gravida maximus. Sed orci mauris, venenatis sit amet nunc eget, ullamcorper scelerisque arcu. Aenean condimentum urna nec sollicitudin volutpat. Integer in blandit leo. Aenean gravida aliquet hendrerit.
+            </div>
+          <div className="main-page-info-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper. Integer nec magna nec purus viverra dignissim. Proin cursus sed velit a consequat. Aenean malesuada ligula a pharetra vestibulum. Sed eget porttitor sapien, sit amet vehicula odio. Vivamus finibus ligula at quam accumsan, vel cursus urna aliquet. Morbi fermentum erat nec gravida maximus. Sed orci mauris, venenatis sit amet nunc eget, ullamcorper scelerisque arcu. Aenean condimentum urna nec sollicitudin volutpat. Integer in blandit leo. Aenean gravida aliquet hendrerit.
+            </div>
+          <div className="main-page-info-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper. Integer nec magna nec purus viverra dignissim. Proin cursus sed velit a consequat. Aenean malesuada ligula a pharetra vestibulum. Sed eget porttitor sapien, sit amet vehicula odio. Vivamus finibus ligula at quam accumsan, vel cursus urna aliquet. Morbi fermentum erat nec gravida maximus. Sed orci mauris, venenatis sit amet nunc eget, ullamcorper scelerisque arcu. Aenean condimentum urna nec sollicitudin volutpat. Integer in blandit leo. Aenean gravida aliquet hendrerit.
+            </div>
+        </div></div>
     );
   }
 }
