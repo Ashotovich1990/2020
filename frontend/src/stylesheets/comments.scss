@@ -36,6 +36,8 @@
 }
 
 .comments-container{
+  position: fixed;
+  top: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,25 +51,27 @@
 }
 
 .comment-sidebar-body{
-  max-height: 80vh;
+  // max-height: 80vh;
   position: fixed;
   overflow-y: scroll;
-  right: 0;
+  top: 110px;
+  right: 15px;
   bottom: 50px;
   overflow: auto;
   // display: block;
   color: black;
   line-height: 1.5;
   font-family: $Oswald;
+  // height: 100%;
 }
 .comment-sidebar-list-item{
   list-style: none;
   font-weight: 400;
   font-style: normal;
   width: 100%;
-    font-family: $Oswald;
-color: #333;
-font-size: 16px;
+  font-family: $Oswald;
+  color: #333;
+  font-size: 16px;
 }
 
 .list-item-container{
@@ -88,10 +92,10 @@ font-size: 16px;
   display:flex;
   justify-content: space-between;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 15px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 1px 4px 2px rgba(35, 35, 35, 0.15);
+  box-shadow: 0px 1px 4px 2px rgba(100, 100, 100, 0.15);
 }
 
 .comment-submit{
@@ -107,6 +111,14 @@ border-bottom-left-radius: 0;
 }
 
 #commentBoxHeader {
+  position: fixed;
+  top: inherit;
+  right: 0px;
+  z-index: 1;
+  background-color: white;
+  margin: 0;
+  width: 25%;
+  padding-top: 5px;
   font-size: 24px;
   color: #750075;
 }
