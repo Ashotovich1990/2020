@@ -10,6 +10,14 @@ class Search extends React.Component {
     this.handleCandidate = this.handleCandidate.bind(this);
   }
 
+  handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      this.props.receiveSearch(this.state.searchTerm);
+      this.props.fetchTweets(this.state.searchTerm);
+    }
+  }
+
+
   handleChange(e) {
     this.setState( {searchTerm: e.target.value })
   }
@@ -37,8 +45,8 @@ class Search extends React.Component {
     return (
       <div className="search-page">
         <div className="search-bar">
-          <input className="search-box" type="text" onChange={this.handleChange} placeholder="Enter name..."/>
-          <input className="search-button" type="submit" onClick={this.handleClick} value="Search"/>
+          <input className="search-box" type="text" onKeyPress={this.handleKeyPress} onChange={this.handleChange} placeholder="Enter name..."/>
+          {/* <input className="search-button" type="submit" onClick={this.handleClick} value="Search"/> */}
           {candidates}
         </div>
       </div>

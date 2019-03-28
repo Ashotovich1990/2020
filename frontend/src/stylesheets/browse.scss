@@ -17,10 +17,6 @@
   100% { transform: rotate(360deg); }
 }
 
-.browse-container {
-  display: flex;
-  justify-content: center;
-}
 
 .methodology-container {
   text-align: center;
@@ -42,4 +38,28 @@
 
 .methodology-container .negativeLabel {
   color: #FF6F69;
+}
+
+#fear {
+  color: #FF6F69;
+}
+
+#excited {
+  color: #88D8B0;
+}
+
+#bored {
+  color: #FFC038;
+}
+
+#sad {
+  color: #800080;
+}
+
+#happy {
+  color: #E5E600;
+}
+
+#angry {
+  color: #000080;
 }

@@ -31,17 +31,17 @@ class MethodologyEmotions extends React.Component {
           <br/>
           Data is based off {tweetCount} tweets
           <br/>
-          Excited score: {excited}
+          <span id="excited">Excited score:</span> {excited}
           <br/>
-          Fear score: {fear}
+          <span id="fear">Fear score:</span> {fear}
           <br/>
-          Bored score: {bored}
+          <span id="bored">Bored score:</span> {bored}
           <br/>
-          Sad score: {sad}
+          <span id="sad">Sad score:</span> {sad}
           <br/>
-          Happy score: {happy}
+          <span id="happy">Happy score:</span> {happy}
           <br/>
-          Angry score: {angry}
+          <span id="angry">Angry score:</span> {angry}
           <br/>
         </div>
       </div>
