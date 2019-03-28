@@ -20,8 +20,8 @@ class Comments extends React.Component {
   render() {
       return (
         <aside className="comments-container">
-          <div className='comment-sidebar-body'>
           <h2 id="commentBoxHeader">Join the conversation</h2>
+          <div className='comment-sidebar-body'>
             <ul>
            
               {this.props.comments.map(comment => (
