@@ -46,7 +46,7 @@ class Search extends React.Component {
       <div className="search-page">
         <div className="search-bar">
           <input className="search-box" type="text" onKeyPress={this.handleKeyPress} onChange={this.handleChange} placeholder="Enter name..."/>
-          {/* <input className="search-button" type="submit" onClick={this.handleClick} value="Search"/> */}
+          <button className="search-button" type="submit" onClick={this.handleClick}> <i class="fas fa-search"></i> </button>
           {candidates}
         </div>
       </div>
