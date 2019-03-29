@@ -73,24 +73,23 @@
 }
 
 .search-button {
-  box-shadow: 1px 1px 4px 2px rgba(35, 35, 35, 0.15);
+  box-shadow: 0px 1px 1px 2px rgba(35, 35, 35, 0.15);
   font-weight: bold;
-  margin-left: 20px;
   font-family: $Oswald;
   font-size: 24px;
   font-weight: 500;
-  background-color: #FF4E47;
+  background-color: #ddd;
   color: #111;
-  margin-left: 0;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  height: 53px;
-  width: 100px;
+  margin-left: 10px;
+  height: 52px;
+  width: 52px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .search-button:hover {
-  background-color: #FF6F69;
+  background-color: #cdcdcd;
+  cursor: pointer;
 
 }
 
@@ -103,4 +102,10 @@
 
 .methodology-container {
   margin: 0;
+}
+
+.search-spinner {
+  position: absolute;
+  top: 20vh;
+  left: 50vh;
 }
