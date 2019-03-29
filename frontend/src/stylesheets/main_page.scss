@@ -41,17 +41,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 750px;
+  width: 850px;
   border-radius: 20px;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.main-page-content-head > h1 {
+  margin: 10px;
+  font-family: $Oswald;
+  font-size: 60px;
+  margin: 0;
+  color: #f1f1f1;
+  font-weight: bold;
   text-align: center;
 }
 
-.main-page-content > h1 {
+.main-page-content > h2 {
   margin: 10px;
   font-family: $Oswald;
-  font-size: 50px;
+  font-size: 30px;
   margin: 0;
   color: #f1f1f1;
+  padding-bottom:20px;
+  padding-top:20px;
+  font-weight: bold;
+}
+
+.main-page-content > p {
+  margin: 10px;
+  font-family: $Oswald;
+  font-size: 20px;
+  margin: 0;
+  color: #f1f1f1;
+  padding-bottom:20px;
 }
 
 .main-page-button {
@@ -91,8 +114,7 @@
 }
 
 .main-page-info {
-    font-family: $Oswald;
-
+  font-family: $Oswald;
   height: 600px !important;
   background: #ccc;
   display: flex;
