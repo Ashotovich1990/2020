@@ -29,18 +29,15 @@ class MainPage extends React.Component {
       <div className="main-page-info">
           <div className="main-page-info-content">
           <img src="../../assets/images/search.jpg"></img>
-            <p><strong>SIGN UP</strong> and have access to the Twitterverse at your fingertips. Search the topics that matter to you OR search one of the pre-populated 2020 candidates with a simple click of a button to see what conversations are being had about them.</p>
+            <p>Search the topics that matter to you OR search one of the pre-populated 2020 candidates to see what Twitter conversations are being had.</p>
             </div>
           <div className="main-page-info-content">
           <img src="../../assets/images/2020crop.jpg"></img>
-            <p><strong>ONCE YOU’VE MADE YOUR DECISION,</strong> get the latest tweets of your search topic. Using the latest AI sentiment and emotion text-analysis technologies, you’ll be able to quickly visualize Twitter users’ attitudes of your topic or person in easy-
-to-read, digestible displays.</p>
+            <p>Using the latest AI sentiment and emotion text-analysis technologies, you’ll be able to quickly visualize Twitter users’ attitudes of your topic or person in easy-to-read, digestible displays.</p>
             </div>
           <div className="main-page-info-content">
             <img src="../../assets/images/comments.jpg"></img>
-            <p><strong>JOIN THE CONVERSATION.</strong> Having questions about why a person is liked or disliked so much? Look at the 
-scores and scroll through the tweets analyzed yourself! If you have more questions
-– or simply to express your ideas – join the conversation and chat with your peers on how we can move forward.</p>
+            <p>Having questions about why a person is liked or disliked so much? Look at the scores and scroll through the tweets analyzed yourself! If you have more questions – join the conversation.</p>
             </div>
         </div>
         <div className="main-page-about"> 

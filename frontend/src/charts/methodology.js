@@ -7,7 +7,9 @@ class Methodology extends React.Component {
     let negative;
     let tweetCount;
     if (this.props.sentiments.probabilities) {
-        positive = this.props.sentiments.probabilities.positive;neutral = this.props.sentiments.probabilities.neutral;negative = this.props.sentiments.probabilities.negative;
+        positive = (this.props.sentiments.probabilities.positive*100).toFixed(1) + "%";
+        neutral = (this.props.sentiments.probabilities.neutral*100).toFixed(1) + "%";
+        negative = (this.props.sentiments.probabilities.negative*100).toFixed(1) + "%";
         tweetCount = this.props.tweets.length;
       
     } else {
@@ -17,10 +19,9 @@ class Methodology extends React.Component {
       
       <div className="methodology-container">
         <h2>Methodology</h2> 
-        
         <p>The following graph contains the following data points:</p>
-        
-        <p>Data is based off {tweetCount} tweets</p>
+        <br/>
+        <p>{tweetCount} tweets</p>
         <p><span className="positiveLabel">Positive score:</span> {positive}</p>
         <p><span className="neutralLabel">Neutral score:</span> {neutral}</p>
         <p><span className="negativeLabel">Negative score:</span> {negative}</p>
