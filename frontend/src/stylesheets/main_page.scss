@@ -6,9 +6,9 @@
 }
 
 .splash-steps{
-  width:200px;
-  height:200px;
-  border-radius: 50%;
+  width:150px;
+  height:150px;
+  
 }
 
 .splash-image {
@@ -27,7 +27,7 @@
 }
 
 .main-page {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 200px);
   background: 
     rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -50,7 +50,7 @@
   width: 850px;
   border-radius: 20px;
   text-align: center;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 .main-page-content-head > h1 {
@@ -121,8 +121,8 @@
 
 .main-page-info {
   font-family: $Oswald;
-  height: 600px !important;
-  background: #ccc;
+  height: 325px !important;
+  background: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -130,9 +130,9 @@
 }
 
 .main-page-info-content{
-  height: 400px;
+  height: 300px;
   width: 300px;
-  font-size: 20px;
+  font-size: 15px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -147,6 +147,17 @@
   align-items: center;
   height: 400px;
   background: #efefef;
+}
+
+.how-it-works{
+  font-family: $Oswald;
+  display:flex;
+  background: white;
+  font-size:35px;
+  justify-content:center;
+  text-align: center;
+  height:50px;
+  padding-top: 15px;
 }
 
 .main-page-about img {
