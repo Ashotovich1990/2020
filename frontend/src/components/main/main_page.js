@@ -33,7 +33,6 @@ class MainPage extends React.Component {
           How it Works
         </div>
       <div className="main-page-info">
-        
           <div className="main-page-info-content">
           <img src={search} alt="" className="splash-steps"></img>
             <p>Search the topics that matter to you OR search one of the pre-populated 2020 candidates to see what Twitter conversations are being had.</p>
@@ -42,6 +41,7 @@ class MainPage extends React.Component {
           <img src={graph} alt="" className="splash-steps"></img>
             <p>Using the latest AI sentiment and emotion text-analysis technologies, you’ll be able to quickly visualize Twitter users’ attitudes of your topic or person in easy-to-read, digestible displays.</p>
             </div>
+
           <div className="main-page-info-content">
             <img src={comments} alt="" className="splash-steps"></img>
             <p>Having questions about why a person is liked or disliked so much? Look at the scores and scroll through the tweets analyzed yourself! If you have more questions – join the conversation.</p>
@@ -52,7 +52,8 @@ class MainPage extends React.Component {
           <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper.</span>
 </div>
         <div className="main-page-footer">
-          <p>Copyright &copy; 2019</p>
+          {/* <p>Copyright &copy; 2019</p> */}
+          <p> Check us out on Github - <a href="https://github.com/Ashotovich1990/2020" target="_blank"><i class="fab fa-github fa-lg"></i></a></p>
         </div>
       </div>
     );

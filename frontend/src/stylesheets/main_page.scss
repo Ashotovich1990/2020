@@ -84,6 +84,7 @@
 }
 
 .main-page-button {
+  padding: 10px;
   margin: 30px;
   font-family: $Oswald;
   font-weight: 500;
@@ -109,14 +110,15 @@
 .main-page-footer {
   display: flex;
   align-items: center;
-  height: 7%;
+  justify-content: center;
   background-color: white;
+  padding: 10px
 }
 
 .main-page-footer > p {
   margin: auto 20px;
   font-family: $Oswald;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .main-page-info {
@@ -126,7 +128,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 .main-page-info-content{
@@ -169,4 +170,12 @@
 
 .main-page-about span {
   width: 50%;
+}
+
+.main-arrow {
+  position: absolute;
+  top: 95.5vh;
+  z-index: 999999;
+  color: #999;
+
 }
