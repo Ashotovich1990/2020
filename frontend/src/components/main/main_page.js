@@ -48,7 +48,7 @@ class MainPage extends React.Component {
             </div>
         </div>
         <div className="main-page-footer">
-          <p> Check us out on Github - <a href="https://github.com/Ashotovich1990/2020" target="_blank"><i class="fab fa-github fa-lg" ></i></a></p>
+          <p> Check us out on Github - <a href="https://github.com/Ashotovich1990/2020" target="_blank"><i className="fab fa-github fa-lg" ></i></a></p>
         </div>
       </div>
     );
