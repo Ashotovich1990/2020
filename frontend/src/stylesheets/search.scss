@@ -49,6 +49,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-items: flex-start;
 }
 
@@ -104,8 +105,16 @@
   margin: 0;
 }
 
-.search-spinner {
-  position: absolute;
-  top: 20vh;
+.search-spinner, .search-fail {
+  position: relative;
   left: 50vh;
+}
+
+.search-fail {
+  position: relative;
+  top: 10vh;
+  left: 30vh;
+  font-size: 24px;
+  color: #750075;
+  font-family: $Oswald;
 }
