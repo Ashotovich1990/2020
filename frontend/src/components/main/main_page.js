@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../stylesheets/main_page.scss';
-import search from "../../assets/images/search.jpg";
-import graph from "../../assets/images/2020crop.jpg";
-import comments from "../../assets/images/comments.jpg";
+import search from "../../assets/images/mag.svg";
+import graph from "../../assets/images/graph.svg";
+import comments from "../../assets/images/conversation.svg";
 
 class MainPage extends React.Component {
 
@@ -13,7 +13,7 @@ class MainPage extends React.Component {
       <div className="main-page">
         {/* image from Lukas Blazek on unsplash.com */}
         <img className="splash-image"
-          src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80"
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
           alt="laptop with visualized data" />
 
         <div className="main-page-content-container">
@@ -29,7 +29,11 @@ class MainPage extends React.Component {
           </div>       
         </div>
       </div>
+      <div className="how-it-works">
+          How it Works
+        </div>
       <div className="main-page-info">
+        
           <div className="main-page-info-content">
           <img src={search} alt="" className="splash-steps"></img>
             <p>Search the topics that matter to you OR search one of the pre-populated 2020 candidates to see what Twitter conversations are being had.</p>
