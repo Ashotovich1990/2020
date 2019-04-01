@@ -69,7 +69,7 @@ class LoginForm extends React.Component {
       <div className="login-form-container">
         {/* image from Lukas Blazek on unsplash.com */}
         <img className="splash-image"
-          src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80"
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
           alt="laptop with visualized data" />
 
         <form onSubmit={this.handleSubmit}>

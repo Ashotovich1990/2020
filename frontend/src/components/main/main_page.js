@@ -23,8 +23,8 @@ class MainPage extends React.Component {
               <h1>CHANGES</h1>
               <h1>EVERYTHING</h1>
             </div>
-            <h2>So let’s change the way we take it all in.</h2>
-            <p>2020 lets you listen to the latest Twitter conversations about the TOPIC or PERSON that matters most to you – and more importantly, it lets you listen to the hearts and emotions of these conversations in a visual, palatable experience.</p>
+            <h2>So let’s change the way we take it in</h2>
+            <p>2020 lets you listen to the latest Twitter conversations about the TOPIC or PERSON that matters most to you – and more importantly, it lets you listen to the hearts and emotions of these conversations in a visual, palatable experience</p>
             <Link to={'/signup'} className="main-page-button">Join the Conversation</Link>
           </div>       
         </div>
@@ -47,13 +47,11 @@ class MainPage extends React.Component {
             <p>Having questions about why a person is liked or disliked so much? Look at the scores and scroll through the tweets analyzed yourself! If you have more questions – join the conversation.</p>
             </div>
         </div>
-        <div className="main-page-about"> 
-          <img src="https://cdn.pixabay.com/photo/2019/03/25/09/57/bad-look-4079817_1280.jpg" alt=""></img>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisi vel nunc viverra hendrerit. Sed at tincidunt mi. Nullam at consequat diam. Cras efficitur magna ut condimentum viverra. Suspendisse posuere massa vel enim fringilla semper.</span>
-</div>
         <div className="main-page-footer">
-          {/* <p>Copyright &copy; 2019</p> */}
-          <p> Check us out on Github - <a href="https://github.com/Ashotovich1990/2020" target="_blank"><i class="fab fa-github fa-lg"></i></a></p>
+          <p> Check us out on Github - <a href="https://github.com/Ashotovich1990" target="_blank"><i class="fab fa-github fa-lg" ></i></a>
+          <a href="https://github.com/vivdeg" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+          <a href="https://github.com/ioqren" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+          <a href="https://github.com/davidcparkk" target="_blank"><i class="fab fa-github fa-lg"></i></a></p>
         </div>
       </div>
     );
