@@ -50,14 +50,14 @@
   width: 850px;
   border-radius: 20px;
   text-align: center;
-  margin-top: -20px;
+  
 }
 
 .main-page-content-head > h1 {
   margin: 10px;
   font-family: $Oswald;
   font-size: 60px;
-  margin: -10px;
+  margin: -15px;
   color: #f1f1f1;
   font-weight: bold;
   text-align: center;
@@ -112,7 +112,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  padding: 10px
+  padding: 30px;
 }
 
 .main-page-footer > p {
@@ -158,8 +158,13 @@
   justify-content:center;
   text-align: center;
   height:50px;
-  padding-top: 15px;
+  padding-top: 25px;
 }
+
+// .github-img{
+  
+//   margin-right: 5px;
+// }
 
 .main-page-about img {
   width: 300px;
