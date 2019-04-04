@@ -30,9 +30,12 @@
 
 }
 
-.comment-form input[type="textarea"] {
+.comment-form-body {
   margin-left: 10px;
-  width: 220px;
+  margin-top: 5px;
+  width: 76%;
+  resize: none;
+  text-align: left;
 }
 
 .comments-container{
@@ -54,9 +57,10 @@
   // max-height: 80vh;
   position: fixed;
   overflow-y: scroll;
+  width: inherit;
   top: 110px;
   right: 15px;
-  bottom: 50px;
+  bottom: 66px;
   overflow: auto;
   // display: block;
   color: black;
@@ -80,7 +84,7 @@
   border: 1px solid white;
   border-radius: 4px;
   text-align: center;
-  max-width: 300px;
+  // max-width: 300px;
   width: inherit;
   overflow-wrap: break-word;
 }
@@ -88,7 +92,7 @@
 
 
 .comment-form{
-  width: 300px;
+  width: inherit;
   display:flex;
   justify-content: space-between;
   position: fixed;
@@ -113,7 +117,7 @@ border-bottom-left-radius: 0;
 #commentBoxHeader {
   position: fixed;
   top: inherit;
-  right: 0px;
+  right: 10px;
   z-index: 1;
   background-color: white;
   margin: 0;
