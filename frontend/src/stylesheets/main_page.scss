@@ -5,6 +5,12 @@
   height: 100%;
 }
 
+.splash-steps{
+  width:150px;
+  height:150px;
+  
+}
+
 .splash-image {
   position: fixed;
   top: 0;
@@ -21,7 +27,7 @@
 }
 
 .main-page {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 200px);
   background: 
     rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -44,14 +50,14 @@
   width: 850px;
   border-radius: 20px;
   text-align: center;
-  margin-top: -30px;
+  
 }
 
 .main-page-content-head > h1 {
   margin: 10px;
   font-family: $Oswald;
   font-size: 60px;
-  margin: 0;
+  margin: -15px;
   color: #f1f1f1;
   font-weight: bold;
   text-align: center;
@@ -106,7 +112,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  padding: 10px
+  padding: 30px;
 }
 
 .main-page-footer > p {
@@ -117,17 +123,17 @@
 
 .main-page-info {
   font-family: $Oswald;
-  height: 500px !important;
-  background: #ededed;
+  height: 325px !important;
+  background: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .main-page-info-content{
-  height: 400px;
+  height: 300px;
   width: 300px;
-  font-size: 20px;
+  font-size: 15px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -143,6 +149,22 @@
   height: 400px;
   background: #efefef;
 }
+
+.how-it-works{
+  font-family: $Oswald;
+  display:flex;
+  background: white;
+  font-size:35px;
+  justify-content:center;
+  text-align: center;
+  height:50px;
+  padding-top: 25px;
+}
+
+// .github-img{
+  
+//   margin-right: 5px;
+// }
 
 .main-page-about img {
   width: 300px;

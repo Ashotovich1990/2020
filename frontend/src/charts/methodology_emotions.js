@@ -10,12 +10,12 @@ class MethodologyEmotions extends React.Component {
     let angry;
     let tweetCount;
     if (this.props.emotions.probabilities) {
-      excited = this.props.emotions.probabilities.Excited;
-      fear = this.props.emotions.probabilities.Fear;
-      bored = this.props.emotions.probabilities.Bored;
-      sad = this.props.emotions.probabilities.Sad;
-      happy = this.props.emotions.probabilities.Happy;
-      angry = this.props.emotions.probabilities.Angry;
+      excited = (this.props.emotions.probabilities.Excited*100).toFixed(1) + "%";
+      fear = (this.props.emotions.probabilities.Fear*100).toFixed(1) + "%";
+      bored = (this.props.emotions.probabilities.Bored*100).toFixed(1) + "%";
+      sad = (this.props.emotions.probabilities.Sad*100).toFixed(1) + "%";
+      happy = (this.props.emotions.probabilities.Happy*100).toFixed(1) + "%";
+      angry = (this.props.emotions.probabilities.Angry*100).toFixed(1) + "%";
       tweetCount = this.props.tweets.length;
       
     } else {
@@ -29,7 +29,7 @@ class MethodologyEmotions extends React.Component {
           The following graph contains the following data points:
           <br/>
           <br/>
-          Data is based off {tweetCount} tweets
+          {tweetCount} tweets
           <br/>
           <span id="excited">Excited score:</span> {excited}
           <br/>
