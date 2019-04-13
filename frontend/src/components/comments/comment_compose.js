@@ -37,7 +37,7 @@ class CommentCompose extends React.Component {
     return(
       
       <form  className="comment-form">
-        <input type="textarea"
+        <textarea className="comment-form-body"
           value ={this.state.text}
           onChange={this.update()}
           placeholder="Write your message.."
