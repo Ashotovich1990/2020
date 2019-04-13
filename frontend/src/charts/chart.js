@@ -29,19 +29,28 @@ class ChartContainer extends React.Component {
         }
                 
         const options = {
-            
+            maintainAspectRatio: false,
+
             title: {
                 display: true,
-                text: `Public Opinion on ${this.props.search}`,
-                fontSize: 24
+                text: `Sentiment about ${this.props.search}`,
+                fontSize: 24,
+            
+            },
+
+            legend: {
+                position: 'bottom'
             }
         }
 
         return(
             <div className="graph-container">
+                <div className="chart-container sentiment-chart-container">
                 < Doughnut data={data} options={options} />
-                < Methodology sentiments={this.props.sentiments} tweets={this.props.tweets} />
+                </div>
+            < Methodology sentiments={this.props.sentiments} tweets={this.props.tweets} />
             </div>
+            
         ) 
 
     }
