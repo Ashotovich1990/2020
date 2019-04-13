@@ -13,8 +13,10 @@ class Results extends React.Component {
   render() {
     return(
       <div className="results-page">
-      <ChartContainer sentiments={this.props.sentiments }  search={this.props.search} tweets={this.props.tweets}/> 
-      <ChartEmotionsContainer emotions={this.props.emotions }  search={this.props.search} tweets={this.props.tweets}/> 
+        <div className="results-page-graphs">
+          <ChartContainer sentiments={this.props.sentiments }  search={this.props.search} tweets={this.props.tweets}/> 
+          <ChartEmotionsContainer emotions={this.props.emotions }  search={this.props.search} tweets={this.props.tweets}/> 
+        </div>
       <Tweets tweets={this.props.tweets} />
       </div> 
     )

@@ -67,6 +67,8 @@ class SignupForm extends React.Component {
     return (
       <div className="signup-form-container">
         {/* image from Lukas Blazek on unsplash.com */}
+        <span className="overlay"></span>
+
         <img className="splash-image"
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
           alt="laptop with visualized data" />

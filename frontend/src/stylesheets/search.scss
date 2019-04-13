@@ -5,6 +5,18 @@
   width: 75%;
 }
 
+.results-page {
+  width: calc(100vw - 300px);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.results-page-graphs {
+  display: flex;
+  justify-content: center;
+}
+
 .candidates h2 {
   font-family: $Oswald;
   font-size: 24px;
@@ -96,9 +108,23 @@
 
 .graph-container {
   display: flex;
-  justify-content: flex-start;
-    width:700px !important;
+  align-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width:450px !important;
+}
 
+.chart-container {
+  position: relative;
+  width: 80%;
+}
+
+.sentiment-chart-container {
+  height: 55vh;
+}
+
+.emotions-chart-container {
+  height: 58vh;
 }
 
 .methodology-container {

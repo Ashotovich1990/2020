@@ -29,17 +29,23 @@ class ChartEmotionsContainer extends React.Component {
         }
                 
         const options = {
-            
-            title: {
-                display: true,
-                text: `Public Opinion on ${this.props.search}`,
-                fontSize: 24
-            }
-        }
+            maintainAspectRatio: false,
+			title: {
+				display: true,
+				text: `Emotions about ${this.props.search}`,
+				fontSize: 24,
+			},
+
+			legend: {
+                position: 'bottom',
+			},
+		};
 
         return(
             <div className="graph-container">
-                < Doughnut data={data} options={options} />
+                <div className="chart-container emotions-chart-container">
+                    < Doughnut data={data} options={options} />
+                </div>
                 < MethodologyEmotions emotions={this.props.emotions} tweets={this.props.tweets} />
             </div>
         ) 

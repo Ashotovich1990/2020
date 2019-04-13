@@ -12,6 +12,7 @@
 .signup-form-heading, .login-form-heading {
   font-family: $Oswald;
   font-size: 40px;
+  text-align: center;
 }
 
 .signup-form, .login-form {
@@ -23,8 +24,9 @@
   margin: auto;
   padding: 20px 40px;
   width: 400px;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 1px 1px 10px -2px rgb(120, 120, 120);
+  background-color: rgba(0, 0, 0, 0.8);
+color: #eee;
+  box-shadow: 1px 1px 10px -2px rgb(0, 0, 0);
   font-size: 20px;
 }
 
@@ -46,17 +48,21 @@
 
 .login-form-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
 }
 
 .signup-form-submit, .login-form-submit, .demo-submit {
   font-family: $Oswald;
   font-weight: 400;
-  background-color: rgb(241, 238, 232);
+  background-color: #eee;
   border: 1px solid rgb(190, 185, 175);
   border-radius: 10px;
   height: 40px;
-  width: 80px;
+  padding: 0 10px;
   text-align: center;
+  
 }
 
 .demo-submit {
